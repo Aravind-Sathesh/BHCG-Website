@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./components/header";
+@import "./components/footer";
+
+@import "./pages/home";
+@import "./pages/product";
+@import "./pages/consulting";
+@import "./pages/team";
+
+* {
+    margin: 0;
+    padding: 0;
+}
