@@ -1,0 +1,53 @@
+.footer {
+    background-color: $teal;
+    color: $white;
+    font-family: $body-font;
+    font-size: 1.1rem;
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        width: 250px;
+    }
+
+    .lastdiv {
+        background-color: #027f7b;
+        justify-content: space-between;
+        padding: 0.5rem 4rem;
+    }
+
+    .navigations {
+        gap: 2rem;
+    }
+
+    .icons {
+        gap: 2rem;
+    }
+
+    .contacts {
+        color: white;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .contacts p {
+        gap: 1rem;
+    }
+
+    .end {
+        background: #7ab6b5;
+        color: white;
+        padding: 0.25rem;
+    }
+}
