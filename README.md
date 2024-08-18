@@ -5,7 +5,8 @@
 -   [Introduction](#introduction)
 -   [Technologies Used](#technologies-used)
 -   [Features](#features)
--   [Designed and Developed by](#designed-and-developed-by)
+-   [Developed by](#developed-by)
+-   [Designed by](#designed-by)
 
 ## Introduction
 
@@ -23,11 +24,15 @@ A React Website to showcase the work of the BITS Hyderabad Consulting Group.
 -   Feature 2
 -   Feature 3
 
-## Designed and Developed by:
+## Developed by:
 
 -   Aravind
 -   Atiksh
 -   Aakrit
+
+## Designed by:
+
+-   Aravind
 -   Anushka
 -   Jagrit
 -   and more...
