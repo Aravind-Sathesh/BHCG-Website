@@ -14,7 +14,7 @@ import locationIcon from "../assets/footer/location.png";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="FOOTER">
             <div className="lastdiv flex">
                 <div className="icons flex">
                     <Link to="https://www.instagram.com/the_bhcg/">
@@ -31,7 +31,7 @@ const Footer = () => {
                     </Link>
                 </div>
 
-                <div className="flex navigations">
+                <div className="navigations flex">
                     <img
                         src={white_logo}
                         alt="BHCG Logo"
@@ -39,7 +39,7 @@ const Footer = () => {
                     />
                     <img src={divider} alt="Divider" />
 
-                    <div className="flex-col contacts">
+                    <div className="contacts flex-col">
                         <p className="flex">
                             <img src={mailIcon} alt="Mail" />
                             bhcg@hyderabad.bits-pilani.ac.in
