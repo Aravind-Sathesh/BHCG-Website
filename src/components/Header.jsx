@@ -4,6 +4,10 @@ import teal_logo from "../assets/teal_logo.png";
 import white_logo from "../assets/white_logo.png";
 
 const Header = (props) => {
+    const scrollToFooter = () => {
+        props.footerRef.current.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <header className={props.type + " HEADER"}>
             <nav className="navbar">
@@ -31,7 +35,7 @@ const Header = (props) => {
                             <Link to="/projects">Projects</Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact Us</Link>
+                            <Link onClick={scrollToFooter}>Contact Us</Link>
                         </li>
                     </ul>
                 </div>

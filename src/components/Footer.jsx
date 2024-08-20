@@ -13,12 +13,12 @@ import mailIcon from "../assets/footer/mail.png";
 import phoneIcon from "../assets/footer/phone.png";
 import locationIcon from "../assets/footer/location.png";
 
-const Footer = () => {
+const Footer = ({ footerRef }) => {
     const year = dayjs().year();
     const phno = "+91 99999 99999";
 
     return (
-        <footer className="FOOTER">
+        <footer className="FOOTER" ref={footerRef}>
             <div className="lastdiv flex">
                 <div className="icons flex">
                     <Link
