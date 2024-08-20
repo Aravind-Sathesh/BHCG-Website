@@ -22,7 +22,7 @@
     }
 
     .lastdiv {
-        background-color: #027f7b;
+        background-color: $teal;
         justify-content: space-between;
         padding: 0.5rem 4rem;
     }
@@ -36,7 +36,7 @@
     }
 
     .contacts {
-        color: white;
+        color: $white;
         align-items: start;
         gap: 2rem;
     }
@@ -46,8 +46,13 @@
     }
 
     .end {
-        background: #7ab6b5;
-        color: white;
+        background: $light-teal;
+        color: $white;
         padding: 0.25rem;
+    }
+
+    .footerLink {
+        color: $white;
+        text-decoration: none;
     }
 }
