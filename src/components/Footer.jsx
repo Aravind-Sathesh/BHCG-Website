@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import dayjs from "dayjs";
 
 import facebookIcon from "../assets/footer/facebook.png";
 import instagramIcon from "../assets/footer/instagram.png";
@@ -13,6 +14,9 @@ import phoneIcon from "../assets/footer/phone.png";
 import locationIcon from "../assets/footer/location.png";
 
 const Footer = () => {
+    const year = dayjs().year();
+    const phno = "+91 99999 99999";
+
     return (
         <footer className="FOOTER">
             <div className="lastdiv flex">
@@ -58,20 +62,41 @@ const Footer = () => {
                     <div className="contacts flex-col">
                         <p className="flex">
                             <img src={mailIcon} alt="Mail" />
-                            bhcg@hyderabad.bits-pilani.ac.in
+                            <Link
+                                to="mailto:bhcg@hyderabad.bits-pilani.ac.in"
+                                rel="noopener"
+                                target="_blank"
+                                className="footerLink"
+                            >
+                                bhcg@hyderabad.bits-pilani.ac.in
+                            </Link>
                         </p>
                         <p className="flex">
                             <img src={phoneIcon} alt="Phone" />
-                            +91 99999 99999
+                            <Link
+                                to={`tel:${phno.replace(/\s/g, "")}`}
+                                rel="noopener"
+                                target="_blank"
+                                className="footerLink"
+                            >
+                                {phno}
+                            </Link>
                         </p>
                         <p className="flex">
                             <img src={locationIcon} alt="Location" />
-                            Hyderabad, IN
+                            <Link
+                                to="https://maps.app.goo.gl/NRoC46SqYqvmWwN2A"
+                                rel="noopener"
+                                target="_blank"
+                                className="footerLink"
+                            >
+                                Hyderabad, IN
+                            </Link>
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="end flex">© BHCG 2024</div>
+            <div className="end flex">{`© BHCG ${year}`}</div>
         </footer>
     );
 };
