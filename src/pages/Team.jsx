@@ -7,7 +7,7 @@ const Team = () => {
 
     return (
         <>
-            <Header type={"colour"} footerRef={footerRef} />
+            <Header type={"light"} footerRef={footerRef} />
             <div>Team</div>
             <Footer footerRef={footerRef} />
         </>

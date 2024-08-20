@@ -7,7 +7,7 @@ const Product = () => {
 
     return (
         <>
-            <Header type={"colour"} footerRef={footerRef} />
+            <Header type={"light"} footerRef={footerRef} />
             <div>Product</div>
             <Footer footerRef={footerRef} />
         </>

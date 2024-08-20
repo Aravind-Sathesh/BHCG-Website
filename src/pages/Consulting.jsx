@@ -7,7 +7,7 @@ const Consulting = () => {
 
     return (
         <>
-            <Header type={"colour"} footerRef={footerRef} />
+            <Header type={"light"} footerRef={footerRef} />
             <div>Consulting</div>
             <Footer footerRef={footerRef} />
         </>
