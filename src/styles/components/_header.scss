@@ -3,7 +3,6 @@
     margin: 0;
     height: 10rem;
     box-sizing: border-box;
-    background-color: $teal;
     font-family: $body-font;
     font-size: 1.1rem;
 
@@ -73,6 +72,7 @@
                 &:hover {
                     color: #fff;
                     background-color: $teal;
+                    transition: background-color 0.5s;
                 }
             }
         }
@@ -93,6 +93,7 @@
                 &:hover {
                     color: $teal;
                     background-color: #fff;
+                    transition: background-color 0.5s;
                 }
             }
         }
