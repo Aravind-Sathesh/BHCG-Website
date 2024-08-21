@@ -38,11 +38,15 @@
     .contacts {
         color: $white;
         align-items: start;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .contacts p {
         gap: 1rem;
+    }
+
+    p.flex {
+        margin: 0.25rem;
     }
 
     .end {

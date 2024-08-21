@@ -1,6 +1,21 @@
 import React, { useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ProjectsGRP from "../components/Project";
+
+import heading from "../assets/projects/Heading.png";
+import white_line from "../assets/projects/white_line.png";
+import ellipse from "../assets/projects/Ellipse.png";
+import baseLine from "../assets/white_baseline.png";
+
+import grp1 from "../assets/projects/gp1.png";
+import grp2 from "../assets/projects/gp2.png";
+import grp3 from "../assets/projects/gp3.png";
+import grp4 from "../assets/projects/gp4.png";
+import grp5 from "../assets/projects/gp5.png";
+import grp6 from "../assets/projects/gp6.png";
+import grp7 from "../assets/projects/gp7.png";
+import grp8 from "../assets/projects/gp8.png";
 
 const Projects = () => {
     const footerRef = useRef(null);
@@ -8,7 +23,158 @@ const Projects = () => {
     return (
         <>
             <Header type={"colour"} footerRef={footerRef} />
-            <div>Projects</div>
+            <div className="PROJECTS">
+                <div className="team-heading">
+                    <img src={heading} alt="projects heading" />
+                </div>
+                <div className="main line flex">
+                    <img src={ellipse} alt="" />
+                    <img id="verti" src={white_line} alt="" />
+                    {Array.from({ length: 8 }).map((_, index) => (
+                        <img
+                            key={index}
+                            id={`dt${index + 1}`}
+                            className="dots"
+                            src={ellipse}
+                            alt={`Dot ${index + 1}`}
+                        />
+                    ))}
+                    <ProjectsGRP id="1" align="left" image={grp1}>
+                        <p>
+                            Ace of Pubs, A start-up that conducts 150+ quizzes
+                            per month in restaurants across India.
+                        </p>
+                        <ul>
+                            <li>
+                                Measured the revenue impact of Ace of Pubs on
+                                restaurants.
+                            </li>
+                            <li>
+                                Compiled the findings into a pitch deck for Ace
+                                of Pubs, aiding them in onboarding more
+                                restaurants.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="2" align="right" image={grp2}>
+                        <p>
+                            An extensive Competitor and Market analysis for
+                            Restat, an upcoming open-source tech start-up.
+                        </p>
+                        <ul>
+                            <li>
+                                Simplified the UI and UX of the application
+                                keeping the user in mind, and improved the
+                                codebase to increase the functionality of the
+                                app.
+                            </li>
+                            <li>
+                                Market analysis and analysis of the market
+                                leaders.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="3" align="left" image={grp3}>
+                        <ul>
+                            <li>Market Study & Collaboration Strategy</li>
+                            <li>Branding Strategy</li>
+                            <li>
+                                Designed research and brand development
+                                strategies.
+                            </li>
+                            <li>
+                                Devised marketing, media, and PR plans to
+                                support commercialization.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="4" align="right" image={grp4}>
+                        <p>A community-based social media platform</p>
+                        <ul>
+                            <li>
+                                Conducted market research for the company and
+                                performed a SWOT analysis on other available
+                                platforms.
+                            </li>
+                            <li>
+                                Evaluated and assessed the app and user
+                                experiences, identifying issues and proposing
+                                potential solutions.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="5" align="left" image={grp5}>
+                        <p className="gp-5-top">Vendor Analysis</p>
+                        <p>
+                            Offline Partners: <br />
+                            Premium Salons & Spas
+                        </p>
+                        <p>
+                            Scope: <br />
+                            Vendor list, partnership terms, financial details,
+                            and related aspects.
+                        </p>
+                        <p>
+                            Market Penetration Strategy: <br />
+                            Explored and implemented new approaches to enhance
+                            growth and expand market reach.
+                        </p>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="6" align="right" image={grp6}>
+                        <ul>
+                            <li>
+                                User assessment, categorization, and product
+                                assessment.
+                            </li>
+                            <li>User acquisition and business expansion.</li>
+                            <li>
+                                Formulated a new marketing strategy based on
+                                market analysis.
+                            </li>
+                            <li>
+                                Optimal product pricing and introduced a market
+                                entry strategy.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="7" align="left" image={grp7}>
+                        <p className="gp-5-top">
+                            Strategy: Conduct market research, identify growth
+                            opportunities, optimize go-to-market strategies.
+                        </p>
+                        <p>
+                            Marketing: Research market opportunities, track
+                            marketing outcomes, develop digital campaigns.
+                        </p>
+                        <p>
+                            Product: Understand user needs, optimize product
+                            features, plan and launch MVPs.
+                        </p>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="8" align="right" image={grp8}>
+                        <ul>
+                            <li>
+                                Identified a new vertical market that now
+                                represents a considerable share of their product
+                                offering.
+                            </li>
+                            <li>
+                                Developed marketing strategies to significantly
+                                increase traffic across all of their social
+                                media platforms.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+                </div>
+                <img className="baseline" src={baseLine} alt="Divider" />
+            </div>
             <Footer footerRef={footerRef} />
         </>
     );
