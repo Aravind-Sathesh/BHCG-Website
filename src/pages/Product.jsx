@@ -3,11 +3,11 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatWeDo from "../components/WhatWeDo";
 
-import heading from "../assets/product_consulting/product.png";
+import heading from "../assets/product_consulting/product.webp";
 import ProdStorm_CaseCompetition from "../components/ProdStorm_CaseCompetition";
 import Product_Speakers from "../components/Product_Speakers";
 
-import baseLine from "../assets/teal_baseline.png";
+import baseLine from "../assets/teal_baseline.webp";
 
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";

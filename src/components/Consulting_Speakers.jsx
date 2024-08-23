@@ -1,18 +1,18 @@
 import React from "react";
 import Speaker from "./Speaker";
 
-import c_1_profile from "../assets/product_consulting/consulting_speakers/c_1_profile.jpeg";
-import c_2_profile from "../assets/product_consulting/consulting_speakers/c_2_profile.jpeg";
-import c_3_profile from "../assets/product_consulting/consulting_speakers/c_3_profile.jpg";
-import c_4_profile from "../assets/product_consulting/consulting_speakers/c_4_profile.jpeg";
+import c_1_profile from "../assets/product_consulting/consulting_speakers/c_1_profile.webp";
+import c_2_profile from "../assets/product_consulting/consulting_speakers/c_2_profile.webp";
+import c_3_profile from "../assets/product_consulting/consulting_speakers/c_3_profile.webp";
+import c_4_profile from "../assets/product_consulting/consulting_speakers/c_4_profile.webp";
 import c_5_profile from "../assets/product_consulting/consulting_speakers/c_5_profile.webp";
-import c_6_profile from "../assets/product_consulting/consulting_speakers/c_6_profile.png";
+import c_6_profile from "../assets/product_consulting/consulting_speakers/c_6_profile.webp";
 
-import c_1_company from "../assets/product_consulting/consulting_speakers/c_1_company.png";
-import c_2_company from "../assets/product_consulting/consulting_speakers/c_2_company.png";
-import c_3_company from "../assets/product_consulting/consulting_speakers/c_3_company.png";
-import c_4_company from "../assets/product_consulting/consulting_speakers/c_4_company.png";
-import c_5_company from "../assets/product_consulting/consulting_speakers/c_5_company.png";
+import c_1_company from "../assets/product_consulting/consulting_speakers/c_1_company.webp";
+import c_2_company from "../assets/product_consulting/consulting_speakers/c_2_company.webp";
+import c_3_company from "../assets/product_consulting/consulting_speakers/c_3_company.webp";
+import c_4_company from "../assets/product_consulting/consulting_speakers/c_4_company.webp";
+import c_5_company from "../assets/product_consulting/consulting_speakers/c_5_company.webp";
 import c_6_company from "../assets/product_consulting/consulting_speakers/c_6_company.webp";
 
 const Consulting_Speakers = () => {

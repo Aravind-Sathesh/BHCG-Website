@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import linkedinLogo from "../assets/team/linkedinLogo.png";
+import linkedinLogo from "../assets/team/linkedinLogo.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

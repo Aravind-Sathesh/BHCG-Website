@@ -7,12 +7,12 @@ import ProdStorm_CaseCompetition from "../components/ProdStorm_CaseCompetition";
 import Consulting_Speakers from "../components/Consulting_Speakers";
 import Resource_Card from "../components/Resource_Card";
 
-import baseLine from "../assets/teal_baseline.png";
-import heading from "../assets/product_consulting/consulting.png";
+import baseLine from "../assets/teal_baseline.webp";
+import heading from "../assets/product_consulting/consulting.webp";
 
-import bmc from "../assets/product_consulting/bmc.png";
-import bhcgbrochure from "../assets/product_consulting/bhcgbrochure.png";
-import casebook from "../assets/product_consulting/casebook.png";
+import bmc from "../assets/product_consulting/bmc.webp";
+import bhcgbrochure from "../assets/product_consulting/bhcgbrochure.webp";
+import casebook from "../assets/product_consulting/casebook.webp";
 
 const Consulting = () => {
     const footerRef = useRef(null);
@@ -56,7 +56,7 @@ const Consulting = () => {
                 </p>
             </ProdStorm_CaseCompetition>
             <Consulting_Speakers />
-            <div class="resources-section">
+            <div className="resources-section">
                 <h1 className="teal-heading">Resources</h1>
                 <div className="card-container">
                     <Resource_Card

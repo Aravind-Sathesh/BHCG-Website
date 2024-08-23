@@ -3,15 +3,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TeamPOR from "../components/Leader";
 
-import heading from "../assets/team/Heading.png";
-import teamPhoto from "../assets/team/fullteam.png";
-import baseLine from "../assets/teal_baseline.png";
+import heading from "../assets/team/Heading.webp";
+import teamPhoto from "../assets/team/fullteam.webp";
+import baseLine from "../assets/teal_baseline.webp";
 
-import por_2 from "../assets/team/por_2.jpg";
-import por_3 from "../assets/team/por_3.jpg";
-import por_4 from "../assets/team/por_4.jpg";
-import por_5 from "../assets/team/por_5.jpg";
-import por_1 from "../assets/team/por_1.jpg";
+import por_2 from "../assets/team/por_2.webp";
+import por_3 from "../assets/team/por_3.webp";
+import por_4 from "../assets/team/por_4.webp";
+import por_5 from "../assets/team/por_5.webp";
+import por_1 from "../assets/team/por_1.webp";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

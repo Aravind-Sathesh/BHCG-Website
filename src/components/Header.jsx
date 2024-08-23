@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import teal_logo from "../assets/teal_logo.png";
-import white_logo from "../assets/white_logo.png";
+import teal_logo from "../assets/teal_logo.webp";
+import white_logo from "../assets/white_logo.webp";
 
 const Header = (props) => {
     const scrollToFooter = () => {

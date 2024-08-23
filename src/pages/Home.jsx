@@ -3,9 +3,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatWeDo from "../components/WhatWeDo";
 
-import background from "../assets/home_background.jpg";
-import rectangle from "../assets/teal_rectangle.png";
-import baseLine from "../assets/teal_baseline.png";
+import background from "../assets/home_background.webp";
+import rectangle from "../assets/teal_rectangle.webp";
+import baseLine from "../assets/teal_baseline.webp";
 
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";

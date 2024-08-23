@@ -3,19 +3,19 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProjectsGRP from "../components/Project";
 
-import heading from "../assets/projects/Heading.png";
-import white_line from "../assets/projects/white_line.png";
-import ellipse from "../assets/projects/Ellipse.png";
-import baseLine from "../assets/white_baseline.png";
+import heading from "../assets/projects/Heading.webp";
+import white_line from "../assets/projects/white_line.webp";
+import ellipse from "../assets/projects/Ellipse.webp";
+import baseLine from "../assets/white_baseline.webp";
 
-import grp1 from "../assets/projects/gp1.png";
-import grp2 from "../assets/projects/gp2.png";
-import grp3 from "../assets/projects/gp3.png";
-import grp4 from "../assets/projects/gp4.png";
-import grp5 from "../assets/projects/gp5.png";
-import grp6 from "../assets/projects/gp6.png";
-import grp7 from "../assets/projects/gp7.png";
-import grp8 from "../assets/projects/gp8.png";
+import grp1 from "../assets/projects/gp1.webp";
+import grp2 from "../assets/projects/gp2.webp";
+import grp3 from "../assets/projects/gp3.webp";
+import grp4 from "../assets/projects/gp4.webp";
+import grp5 from "../assets/projects/gp5.webp";
+import grp6 from "../assets/projects/gp6.webp";
+import grp7 from "../assets/projects/gp7.webp";
+import grp8 from "../assets/projects/gp8.webp";
 
 const Projects = () => {
     const footerRef = useRef(null);

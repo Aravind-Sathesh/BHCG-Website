@@ -8,11 +8,11 @@ import instagramIcon from "../assets/footer/instagram.svg";
 import twitterIcon from "../assets/footer/twitter.svg";
 import linkedinIcon from "../assets/footer/linkedin.svg";
 
-import white_logo from "../assets/white_logo.png";
-import divider from "../assets/footer/divider.png";
-import mailIcon from "../assets/footer/mail.png";
-import phoneIcon from "../assets/footer/phone.png";
-import locationIcon from "../assets/footer/location.png";
+import white_logo from "../assets/white_logo.webp";
+import divider from "../assets/footer/divider.webp";
+import mailIcon from "../assets/footer/mail.webp";
+import phoneIcon from "../assets/footer/phone.webp";
+import locationIcon from "../assets/footer/location.webp";
 
 const Footer = ({ footerRef, headerRef }) => {
     const year = dayjs().year();
