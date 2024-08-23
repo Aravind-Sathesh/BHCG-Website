@@ -143,4 +143,24 @@
     .baseline {
         padding-bottom: 1.5rem;
     }
+
+    @media (max-width: 1600px) {
+        .gp-left {
+            left: 15%;
+        }
+
+        .gp-right {
+            right: 15%;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        .gp-left {
+            left: 10%;
+        }
+
+        .gp-right {
+            right: 10%;
+        }
+    }
 }

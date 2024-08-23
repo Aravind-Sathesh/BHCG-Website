@@ -25,4 +25,13 @@
             border-radius: 0.5rem;
         }
     }
+
+    @media (max-width: 1500px) {
+        .header > h2 {
+            font-size: 3rem;
+        }
+        li {
+            font-size: 1.7rem;
+        }
+    }
 }
