@@ -59,4 +59,11 @@
             min-height: 9rem;
         }
     }
+
+    @media (max-width: 1500px) {
+        .content {
+            min-width: 30%;
+            max-width: 30%;
+        }
+    }
 }
