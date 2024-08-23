@@ -26,13 +26,13 @@ A React Website to showcase the work of the BITS Hyderabad Consulting Group.
 
 ## Developed by:
 
--   Aravind
--   Atiksh
--   Aakrit
+-   Aravind Sathesh
+-   Atiksh Jain
+-   Aakrit Gupta
 
 ## Designed by:
 
--   Aravind
--   Anushka
--   Jagrit
+-   Aravind Sathesh
+-   Anushka Bhatt
+-   Jagrit Gupta
 -   and more...

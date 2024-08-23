@@ -1,0 +1,63 @@
+@import "../components/what-we-do";
+@import "../components/prodstorm_casecompetition";
+@import "../components/speakers";
+
+.PRODUCT {
+    text-align: center;
+    .heading > img {
+        padding: 0 0 2rem 0;
+    }
+
+    .baseline {
+        margin: 4rem 0;
+    }
+
+    .CONTAINER {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            padding: 3rem 0;
+            font-family: "Roboto Serif";
+            font-weight: 600;
+            color: $teal;
+        }
+
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 30rem;
+            align-items: center;
+            justify-content: center;
+            background-color: $light-teal;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+
+            .carousel-inner {
+                width: 80%;
+                padding: 0 2rem;
+                color: $white;
+                font-family: "Poppins";
+            }
+
+            .testimony {
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                min-height: 25rem;
+                justify-content: space-evenly;
+                P {
+                    font-family: "Roboto Serif";
+                    font-style: italic;
+                    margin-bottom: 0;
+                }
+            }
+            .carousel-indicators {
+                display: none;
+            }
+        }
+    }
+}

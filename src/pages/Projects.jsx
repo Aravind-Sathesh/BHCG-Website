@@ -19,10 +19,15 @@ import grp8 from "../assets/projects/gp8.png";
 
 const Projects = () => {
     const footerRef = useRef(null);
+    const headerRef = useRef(null);
 
     return (
         <>
-            <Header type={"colour"} footerRef={footerRef} />
+            <Header
+                type={"colour"}
+                footerRef={footerRef}
+                headerRef={headerRef}
+            />
             <div className="PROJECTS">
                 <div className="team-heading">
                     <img src={heading} alt="projects heading" />
@@ -175,7 +180,7 @@ const Projects = () => {
                 </div>
                 <img className="baseline" src={baseLine} alt="Divider" />
             </div>
-            <Footer footerRef={footerRef} />
+            <Footer footerRef={footerRef} headerRef={headerRef} />
         </>
     );
 };

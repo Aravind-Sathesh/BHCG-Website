@@ -1,0 +1,28 @@
+.carousel-card {
+    padding: 5rem 10rem;
+    text-align: left;
+
+    ul {
+        margin-top: 2rem;
+    }
+    li {
+        font-family: "Poppins";
+        font-size: 2rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            width: 70%;
+            font-family: "Roboto Serif";
+            font-size: 4rem;
+        }
+        img {
+            width: 8rem;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.TEAM_POR {
+    width: 60%;
+    padding: 5rem 0 5rem 0;
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 1rem 0 0 0;
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+
+    h2 {
+        gap: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .gp-left-text,
+    .gp-left-heading {
+        padding: 1rem 5rem 1rem 10rem;
+        align-items: flex-start;
+    }
+
+    .gp-left-heading {
+        color: $teal;
+        text-transform: uppercase;
+        font-family: "Roboto Serif";
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gp-left-text {
+        background: $teal;
+        color: $white;
+        font-family: "Poppins";
+        font-size: 1.25rem;
+        position: relative;
+        padding-right: 2.5rem;
+        box-shadow: 1rem 1rem 0rem 0rem #c0c0c0;
+    }
+
+    .gp-left-picture {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        padding-bottom: 0.75rem;
+        background: #d9d9d9;
+    }
+
+    .photo {
+        width: 15rem;
+        height: 18rem;
+        object-fit: cover;
+    }
+
+    .gp-right-heading {
+        color: $teal;
+        text-transform: uppercase;
+        font-family: "Roboto Serif";
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 1rem 10rem 1rem 5rem;
+    }
+
+    .gp-right-text {
+        background: $teal;
+        color: $white;
+        font-size: 1.25rem;
+        font-family: "Poppins";
+        position: relative;
+        padding: 1rem;
+        box-shadow: -1rem 1rem 0rem 0rem #c0c0c0;
+        p {
+            width: 80%;
+            padding: 1rem;
+        }
+    }
+
+    .gp-right-picture {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(50%, -50%);
+        padding: 1rem;
+        padding-bottom: 0.75rem;
+        background: #d9d9d9;
+    }
+}

@@ -5,7 +5,8 @@
     box-sizing: border-box;
     font-family: $body-font;
     font-size: 1.1rem;
-
+    position: relative;
+    z-index: 1;
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -79,8 +80,7 @@
     }
 
     &.colour {
-        background-color: $teal;
-        opacity: 65%;
+        background-color: $transparent-teal;
 
         .nav-container {
             color: #fff;

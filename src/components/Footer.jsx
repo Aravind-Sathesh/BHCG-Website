@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import dayjs from "dayjs";
+import { Tooltip, Typography } from "@mui/material";
 
-import facebookIcon from "../assets/footer/facebook.png";
-import instagramIcon from "../assets/footer/instagram.png";
-import twitterIcon from "../assets/footer/twitter.png";
-import linkedinIcon from "../assets/footer/linkedin.png";
+import facebookIcon from "../assets/footer/facebook.svg";
+import instagramIcon from "../assets/footer/instagram.svg";
+import twitterIcon from "../assets/footer/twitter.svg";
+import linkedinIcon from "../assets/footer/linkedin.svg";
 
 import white_logo from "../assets/white_logo.png";
 import divider from "../assets/footer/divider.png";
@@ -13,9 +14,13 @@ import mailIcon from "../assets/footer/mail.png";
 import phoneIcon from "../assets/footer/phone.png";
 import locationIcon from "../assets/footer/location.png";
 
-const Footer = ({ footerRef }) => {
+const Footer = ({ footerRef, headerRef }) => {
     const year = dayjs().year();
     const phno = "+91 99999 99999";
+
+    const scrollToHeader = () => {
+        headerRef.current.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <footer className="FOOTER" ref={footerRef}>
@@ -56,6 +61,7 @@ const Footer = ({ footerRef }) => {
                         src={white_logo}
                         alt="BHCG Logo"
                         className="footer-logo"
+                        onClick={scrollToHeader}
                     />
                     <img src={divider} alt="Divider" />
 
@@ -90,13 +96,36 @@ const Footer = ({ footerRef }) => {
                                 target="_blank"
                                 className="footerLink"
                             >
-                                Hyderabad, IN
+                                Hyderabad, India
                             </Link>
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="end flex">{`© BHCG ${year}`}</div>
+            <Tooltip
+                title={
+                    <div style={{ textAlign: "center" }}>
+                        <Typography variant="body2">
+                            <u>
+                                <i>Credits</i>
+                            </u>
+                            <br />
+                            Aakrit Jain
+                            <br />
+                            Atiksh Gupta
+                            <br />
+                            Aravind Sathesh
+                            <br />
+                            Rithvik Vallivedu
+                            <br />
+                            Design Team
+                        </Typography>
+                    </div>
+                }
+                placement="top"
+            >
+                <div className="end flex">{`© BHCG ${year}`}</div>
+            </Tooltip>
         </footer>
     );
 };

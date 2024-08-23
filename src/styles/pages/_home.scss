@@ -1,0 +1,108 @@
+@import "../components/home-carousel";
+
+.HOME {
+    font-family: "Poppins";
+
+    .background {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        transform: translateY(-10rem);
+        position: absolute;
+        z-index: -3;
+    }
+
+    .rectangle {
+        height: calc(100vh - 10rem);
+        width: 100%;
+        z-index: -2;
+        position: absolute;
+    }
+
+    .hero {
+        color: $white;
+        padding-top: 10rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        padding-bottom: calc(100vh - 49rem);
+        position: relative;
+        z-index: 5;
+        h1 {
+            font-size: 5rem;
+            font-weight: 600;
+            height: 7rem;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-family: "Roboto Serif";
+            font-style: italic;
+            padding: 3rem 0;
+            font-weight: 300;
+            height: 15rem;
+            margin-bottom: 0;
+        }
+    }
+
+    .introComp {
+        background-color: $white;
+        color: $teal;
+        h1 {
+            letter-spacing: normal !important;
+        }
+    }
+
+    .stats {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        font-family: "Roboto Serif";
+        background-color: $teal;
+        color: $white;
+        padding: 5rem 0;
+        .stat {
+            font-size: 7rem;
+            flex-direction: column;
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .baselinediv {
+        text-align: center;
+        .baseline {
+            margin: 4rem 0;
+        }
+    }
+
+    .services {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            padding: 3rem 0;
+            font-family: "Roboto Serif";
+            font-weight: 600;
+            color: $teal;
+        }
+
+        .carousel {
+            width: 70%;
+            background-color: $light-teal;
+            color: $white;
+            height: 35rem;
+
+            border-radius: 1rem;
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+            // display: flex;
+            // flex-direction: column;
+        }
+
+        .carousel-indicators {
+            display: none;
+        }
+    }
+}

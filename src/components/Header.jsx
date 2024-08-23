@@ -9,7 +9,7 @@ const Header = (props) => {
     };
 
     return (
-        <header className={props.type + " HEADER"}>
+        <header className={props.type + " HEADER"} ref={props.headerRef}>
             <nav className="navbar">
                 <div className="logo">
                     <img

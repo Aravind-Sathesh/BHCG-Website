@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import TeamPOR from "../components/TeamPOR";
+import TeamPOR from "../components/Leader";
 
 import heading from "../assets/team/Heading.png";
 import teamPhoto from "../assets/team/fullteam.png";
@@ -13,17 +13,29 @@ import por_4 from "../assets/team/por_4.jpg";
 import por_5 from "../assets/team/por_5.jpg";
 import por_1 from "../assets/team/por_1.jpg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Team = () => {
     const footerRef = useRef(null);
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+        AOS.init({ duration: 800 });
+    }, []);
 
     return (
         <>
-            <Header type={"light"} footerRef={footerRef} />
+            <Header
+                type={"light"}
+                footerRef={footerRef}
+                headerRef={headerRef}
+            />
             <div className="TEAM">
                 <div className="team-heading">
                     <img src={heading} alt="our team heading" />
                 </div>
-                <div className="team-photo">
+                <div className="team-photo" data-aos="fade-up">
                     <img src={teamPhoto} alt="full team image" />
                 </div>
                 <h1>Leadership</h1>
@@ -89,7 +101,7 @@ const Team = () => {
                 </div>
                 <img className="baseline" src={baseLine} alt="Divider" />
             </div>
-            <Footer footerRef={footerRef} />
+            <Footer footerRef={footerRef} headerRef={headerRef} />
         </>
     );
 };
