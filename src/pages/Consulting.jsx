@@ -14,6 +14,9 @@ import bmc from "../assets/product_consulting/bmc.webp";
 import bhcgbrochure from "../assets/product_consulting/bhcgbrochure.webp";
 import casebook from "../assets/product_consulting/casebook.webp";
 
+import casebookpdf from "../assets/product_consulting/Casebook.pdf";
+import brochurepdf from "../assets/product_consulting/Collaboration Brochure.pdf";
+
 const Consulting = () => {
     const footerRef = useRef(null);
     const headerRef = useRef(null);
@@ -65,7 +68,7 @@ const Consulting = () => {
                         title="Consulting Casebook"
                         description="Features case frameworks, industry analysis, and solved cases by the club. A great starting point for consulting and product enthusiasts, offering structured approaches and additional resources."
                         buttonText="Download"
-                        linkHref="#"
+                        linkHref={casebookpdf}
                     />
                     <Resource_Card
                         imageSrc={bhcgbrochure}
@@ -73,15 +76,15 @@ const Consulting = () => {
                         title="Collaboration Brochure"
                         description="Outlines our mission, vision, services, past collaborations, notable alumni, and contact information, highlighting the our club's dedication to consulting and product management excellence."
                         buttonText="Download"
-                        linkHref="#"
+                        linkHref={brochurepdf}
                     />
                     <Resource_Card
                         imageSrc={bmc}
                         imageAlt="Business Model Chronicles"
                         title="Business Model Chronicles"
                         description="Provides weekly insights into successful businesses, focusing on operations, growth strategies, and frameworks. Focuses on product management, consulting, and understanding top companies."
-                        buttonText="Read More"
-                        linkHref="#"
+                        buttonText="Learn More"
+                        linkHref="https://www.instagram.com/explore/tags/businessmodelchronicles/"
                     />
                 </div>
             </div>
