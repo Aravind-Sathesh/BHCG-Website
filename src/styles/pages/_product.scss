@@ -71,7 +71,7 @@
         .CONTAINER {
             .testimonials {
                 min-height: 25rem;
-                width: 90%;
+                width: 85%;
 
                 .carousel-inner {
                     padding: 0;
@@ -79,7 +79,7 @@
 
                 .testimony {
                     min-height: 23rem;
-                    font-size: 1rem;
+                    font-size: 1rem !important;
                 }
                 .carousel-control-next {
                     padding-left: 1.4rem;
