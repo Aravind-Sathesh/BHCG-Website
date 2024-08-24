@@ -37,7 +37,7 @@ const Consulting = () => {
                     content="We are the Management Club of BITS Hyderabad, dedicated to fostering a community of consulting enthusiasts. Our club provides consultancy services to startups, non-profit organizations, and corporate firms. To help students develop their consulting skills, we organize workshops and host fireside chats with founders, executives, and industry veterans. These activities offer valuable insights and practical knowledge, preparing students for real-world challenges in the consulting industry."
                 />
             </div>
-            <ProdStorm_CaseCompetition title="Case Competition">
+            <ProdStorm_CaseCompetition title="Case Sensitive">
                 <p>
                     Our Case Competition is a three-round business challenge
                     where top minds compete to develop optimal strategies,

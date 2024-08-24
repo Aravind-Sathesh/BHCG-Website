@@ -44,25 +44,104 @@ const Projects = () => {
                             alt={`Dot ${index + 1}`}
                         />
                     ))}
-                    <ProjectsGRP id="1" align="left" image={grp1}>
-                        <p>
-                            Ace of Pubs, A start-up that conducts 150+ quizzes
-                            per month in restaurants across India.
-                        </p>
+                    <ProjectsGRP id="1" align="left" image={grp8}>
                         <ul>
                             <li>
-                                Measured the revenue impact of Ace of Pubs on
-                                restaurants.
+                                Identified a new vertical market that now
+                                represents a considerable share of their product
+                                offering.
                             </li>
                             <li>
-                                Compiled the findings into a pitch deck for Ace
-                                of Pubs, aiding them in onboarding more
-                                restaurants.
+                                Developed marketing strategies to significantly
+                                increase traffic across all of their social
+                                media platforms.
                             </li>
                         </ul>
                     </ProjectsGRP>
 
-                    <ProjectsGRP id="2" align="right" image={grp2}>
+                    <ProjectsGRP id="2" align="right" image={grp7}>
+                        <p className="gp-5-top">
+                            Strategy: Conduct market research, identify growth
+                            opportunities, optimize go-to-market strategies.
+                        </p>
+                        <p>
+                            Marketing: Research market opportunities, track
+                            marketing outcomes, develop digital campaigns.
+                        </p>
+                        <p>
+                            Product: Understand user needs, optimize product
+                            features, plan and launch MVPs.
+                        </p>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="3" align="left" image={grp6}>
+                        <ul>
+                            <li>
+                                User assessment, categorization, and product
+                                assessment.
+                            </li>
+                            <li>User acquisition and business expansion.</li>
+                            <li>
+                                Formulated a new marketing strategy based on
+                                market analysis.
+                            </li>
+                            <li>
+                                Optimal product pricing and introduced a market
+                                entry strategy.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="4" align="right" image={grp5}>
+                        <p className="gp-5-top">Vendor Analysis</p>
+                        <p>
+                            Offline Partners: <br />
+                            Premium Salons & Spas
+                        </p>
+                        <p>
+                            Scope: <br />
+                            Vendor list, partnership terms, financial details,
+                            and related aspects.
+                        </p>
+                        <p>
+                            Market Penetration Strategy: <br />
+                            Explored and implemented new approaches to enhance
+                            growth and expand market reach.
+                        </p>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="5" align="left" image={grp4}>
+                        <p>A community-based social media platform</p>
+                        <ul>
+                            <li>
+                                Conducted market research for the company and
+                                performed a SWOT analysis on other available
+                                platforms.
+                            </li>
+                            <li>
+                                Evaluated and assessed the app and user
+                                experiences, identifying issues and proposing
+                                potential solutions.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="6" align="right" image={grp3}>
+                        <ul>
+                            <li>Market Study & Collaboration Strategy</li>
+                            <li>Branding Strategy</li>
+                            <li>
+                                Designed research and brand development
+                                strategies.
+                            </li>
+                            <li>
+                                Devised marketing, media, and PR plans to
+                                support commercialization.
+                            </li>
+                        </ul>
+                    </ProjectsGRP>
+
+                    <ProjectsGRP id="7" align="left" image={grp2}>
                         <p>
                             An extensive Competitor and Market analysis for
                             Restat, an upcoming open-source tech start-up.
@@ -81,99 +160,20 @@ const Projects = () => {
                         </ul>
                     </ProjectsGRP>
 
-                    <ProjectsGRP id="3" align="left" image={grp3}>
-                        <ul>
-                            <li>Market Study & Collaboration Strategy</li>
-                            <li>Branding Strategy</li>
-                            <li>
-                                Designed research and brand development
-                                strategies.
-                            </li>
-                            <li>
-                                Devised marketing, media, and PR plans to
-                                support commercialization.
-                            </li>
-                        </ul>
-                    </ProjectsGRP>
-
-                    <ProjectsGRP id="4" align="right" image={grp4}>
-                        <p>A community-based social media platform</p>
+                    <ProjectsGRP id="8" align="right" image={grp1}>
+                        <p>
+                            Ace of Pubs, A start-up that conducts 150+ quizzes
+                            per month in restaurants across India.
+                        </p>
                         <ul>
                             <li>
-                                Conducted market research for the company and
-                                performed a SWOT analysis on other available
-                                platforms.
+                                Measured the revenue impact of Ace of Pubs on
+                                restaurants.
                             </li>
                             <li>
-                                Evaluated and assessed the app and user
-                                experiences, identifying issues and proposing
-                                potential solutions.
-                            </li>
-                        </ul>
-                    </ProjectsGRP>
-
-                    <ProjectsGRP id="5" align="left" image={grp5}>
-                        <p className="gp-5-top">Vendor Analysis</p>
-                        <p>
-                            Offline Partners: <br />
-                            Premium Salons & Spas
-                        </p>
-                        <p>
-                            Scope: <br />
-                            Vendor list, partnership terms, financial details,
-                            and related aspects.
-                        </p>
-                        <p>
-                            Market Penetration Strategy: <br />
-                            Explored and implemented new approaches to enhance
-                            growth and expand market reach.
-                        </p>
-                    </ProjectsGRP>
-
-                    <ProjectsGRP id="6" align="right" image={grp6}>
-                        <ul>
-                            <li>
-                                User assessment, categorization, and product
-                                assessment.
-                            </li>
-                            <li>User acquisition and business expansion.</li>
-                            <li>
-                                Formulated a new marketing strategy based on
-                                market analysis.
-                            </li>
-                            <li>
-                                Optimal product pricing and introduced a market
-                                entry strategy.
-                            </li>
-                        </ul>
-                    </ProjectsGRP>
-
-                    <ProjectsGRP id="7" align="left" image={grp7}>
-                        <p className="gp-5-top">
-                            Strategy: Conduct market research, identify growth
-                            opportunities, optimize go-to-market strategies.
-                        </p>
-                        <p>
-                            Marketing: Research market opportunities, track
-                            marketing outcomes, develop digital campaigns.
-                        </p>
-                        <p>
-                            Product: Understand user needs, optimize product
-                            features, plan and launch MVPs.
-                        </p>
-                    </ProjectsGRP>
-
-                    <ProjectsGRP id="8" align="right" image={grp8}>
-                        <ul>
-                            <li>
-                                Identified a new vertical market that now
-                                represents a considerable share of their product
-                                offering.
-                            </li>
-                            <li>
-                                Developed marketing strategies to significantly
-                                increase traffic across all of their social
-                                media platforms.
+                                Compiled the findings into a pitch deck for Ace
+                                of Pubs, aiding them in onboarding more
+                                restaurants.
                             </li>
                         </ul>
                     </ProjectsGRP>

@@ -11,12 +11,12 @@ import linkedinIcon from "../assets/footer/linkedin.svg";
 import white_logo from "../assets/white_logo.webp";
 import divider from "../assets/footer/divider.webp";
 import mailIcon from "../assets/footer/mail.webp";
-import phoneIcon from "../assets/footer/phone.webp";
+import phoneIcon from "../assets/footer/phone.svg";
 import locationIcon from "../assets/footer/location.webp";
 
 const Footer = ({ footerRef, headerRef }) => {
     const year = dayjs().year();
-    const phno = "+91 99999 99999";
+    const phno = "+91 79703 28178";
 
     const scrollToHeader = () => {
         headerRef.current.scrollIntoView({ behavior: "smooth" });
@@ -80,7 +80,7 @@ const Footer = ({ footerRef, headerRef }) => {
                         <p className="flex">
                             <img src={phoneIcon} alt="Phone" />
                             <Link
-                                to={`tel:${phno.replace(/\s/g, "")}`}
+                                to={`https://wa.me/${phno.replace(/\s/g, "")}`}
                                 rel="noopener"
                                 target="_blank"
                                 className="footerLink"
@@ -102,30 +102,29 @@ const Footer = ({ footerRef, headerRef }) => {
                     </div>
                 </div>
             </div>
-            <Tooltip
-                title={
-                    <div style={{ textAlign: "center" }}>
-                        <Typography variant="body2">
-                            <u>
-                                <i>Credits</i>
-                            </u>
-                            <br />
-                            Aakrit Jain
-                            <br />
-                            Atiksh Gupta
-                            <br />
-                            Aravind Sathesh
-                            <br />
-                            Rithvik Vallivedu
-                            <br />
-                            Design Team
-                        </Typography>
-                    </div>
-                }
-                placement="top"
-            >
-                <div className="end flex">{`© BHCG ${year}`}</div>
-            </Tooltip>
+            <div className="end flex">
+                {`© BHCG ${year}ㅤ`}
+                <Tooltip
+                    title={
+                        <div style={{ textAlign: "center" }}>
+                            <Typography variant="body2">
+                                Aakrit Jain
+                                <br />
+                                Atiksh Gupta
+                                <br />
+                                Aravind Sathesh
+                                <br />
+                                Rithvik Vallivedu
+                                <br />
+                                BHCG Design Team
+                            </Typography>
+                        </div>
+                    }
+                    placement="top"
+                >
+                    {"|ㅤCREDITS"}
+                </Tooltip>
+            </div>
         </footer>
     );
 };

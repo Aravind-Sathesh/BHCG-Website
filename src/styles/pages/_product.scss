@@ -70,10 +70,15 @@
         }
         .CONTAINER {
             .testimonials {
-                min-height: 40rem;
+                min-height: 25rem;
+                width: 90%;
+
+                .carousel-inner {
+                    padding: 0;
+                }
 
                 .testimony {
-                    min-height: 38rem;
+                    min-height: 23rem;
                     font-size: 1rem;
                 }
                 .carousel-control-next {
