@@ -49,9 +49,9 @@
             object-fit: cover;
             border-radius: 0.5rem;
         }
-        li {
+        .list > li {
             font-family: "Poppins";
-            font-size: 1.25rem;
+            font-size: 1.25rem !important;
         }
     }
 }
