@@ -53,7 +53,7 @@ const Home = () => {
                     observer.disconnect();
                 }
             },
-            { threshold: 0.5 }
+            { threshold: 0.3 }
         );
 
         if (statsRef.current) {

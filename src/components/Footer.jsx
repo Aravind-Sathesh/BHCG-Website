@@ -116,7 +116,9 @@ const Footer = ({ footerRef, headerRef }) => {
                                 <br />
                                 Rithvik Vallivedu
                                 <br />
-                                BHCG Design Team
+                                Vedika Kothawade
+                                <br />
+                                Anushka Bhatt
                             </Typography>
                         </div>
                     }
