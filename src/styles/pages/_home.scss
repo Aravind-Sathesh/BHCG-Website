@@ -29,6 +29,7 @@
         z-index: 5;
         h1 {
             font-size: 5rem;
+            width: 100%;
             font-weight: 600;
             height: 7rem;
             margin-bottom: 0;
@@ -48,6 +49,7 @@
         color: $teal;
         h1 {
             letter-spacing: normal !important;
+            width: 100%;
         }
     }
 
@@ -87,6 +89,7 @@
             padding: 3rem 0;
             font-family: "Roboto Serif";
             font-weight: 600;
+            width: 100%;
             color: $teal;
         }
 
@@ -99,10 +102,6 @@
             border-radius: 1rem;
             box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
         }
-
-        .carousel-indicators {
-            display: none;
-        }
     }
     @media (max-width: 768px) {
         position: relative;
@@ -114,6 +113,7 @@
             padding-bottom: calc(92vh - 43rem);
             h1 {
                 font-size: 3.5rem;
+                width: 100%;
                 height: 8.5rem;
             }
         }
@@ -125,7 +125,7 @@
         }
 
         .services > .carousel {
-            height: 30rem;
+            height: 32rem;
         }
 
         .carousel-control-next {

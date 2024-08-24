@@ -15,6 +15,7 @@
         font-family: "Roboto Serif";
         font-weight: 600;
         color: $teal;
+        width: 100%;
     }
 
     .content {
@@ -34,6 +35,9 @@
         font-weight: 400;
         color: $teal;
         font-size: 1.5rem;
+        p {
+            text-align: justify;
+        }
     }
 
     .slide {

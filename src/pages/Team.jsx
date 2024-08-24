@@ -13,16 +13,9 @@ import por_4 from "../assets/team/por_4.webp";
 import por_5 from "../assets/team/por_5.webp";
 import por_1 from "../assets/team/por_1.webp";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const Team = () => {
     const footerRef = useRef(null);
     const headerRef = useRef(null);
-
-    useEffect(() => {
-        AOS.init({ duration: 800 });
-    }, []);
 
     return (
         <>
@@ -35,7 +28,7 @@ const Team = () => {
                 <div className="team-heading">
                     <img src={heading} alt="our team heading" />
                 </div>
-                <div className="team-photo" data-aos="fade-up">
+                <div className="team-photo">
                     <img src={teamPhoto} alt="full team image" />
                 </div>
                 <h1>Leadership</h1>
