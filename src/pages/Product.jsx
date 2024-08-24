@@ -90,10 +90,7 @@ const Product = () => {
                             wherein they invited Alumni and Industry experts
                             working in Product Management to conduct sessions on
                             the fundamentals of Product Management and
-                            interview-specific topics. One suggestion would be
-                            to give access to cohort materials and recordings
-                            once the cohort has ended,as it would help while
-                            revising for final placements."
+                            interview-specific topics. "
                             <br />
                             <p>~Aryaan Parida</p>
                         </div>

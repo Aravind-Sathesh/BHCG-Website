@@ -55,6 +55,7 @@
         display: flex;
         align-items: center;
         text-align: center;
+        align-items: center;
         justify-content: space-evenly;
         font-family: "Roboto Serif";
         background-color: $teal;
@@ -97,12 +98,51 @@
 
             border-radius: 1rem;
             box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-            // display: flex;
-            // flex-direction: column;
         }
 
         .carousel-indicators {
             display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        position: relative;
+        z-index: 0;
+        .hero {
+            padding-top: calc(6vh + 2.5rem);
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            padding-bottom: calc(92vh - 43rem);
+            h1 {
+                font-size: 3.5rem;
+                height: 8.5rem;
+            }
+        }
+        .stats {
+            flex-direction: column;
+            .stat {
+                transform: scale(0.8);
+            }
+        }
+
+        .services > .carousel {
+            height: 30rem;
+        }
+
+        .carousel-control-next {
+            padding-left: 1.4rem;
+        }
+
+        .carousel-control-prev {
+            padding-right: 1.4rem;
+        }
+
+        .baselinediv > .baseline {
+            height: 0px;
+            margin: 2rem 0;
+        }
+
+        .carousel-inner {
+            margin-top: 1rem;
         }
     }
 }

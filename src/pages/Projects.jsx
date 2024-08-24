@@ -33,7 +33,7 @@ const Projects = () => {
                     <img src={heading} alt="projects heading" />
                 </div>
                 <div className="main line flex">
-                    <img src={ellipse} alt="" />
+                    <img src={ellipse} className="anchor" alt="Anchor" />
                     <img id="verti" src={white_line} alt="" />
                     {Array.from({ length: 8 }).map((_, index) => (
                         <img

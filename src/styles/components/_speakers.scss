@@ -62,6 +62,12 @@
                     border-width: 1px;
                 }
             }
+            @media (max-width: 768px) {
+                animation: scroll_mobile 60s linear infinite;
+                .speaker {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -72,5 +78,14 @@
     }
     100% {
         transform: translateX(-156%);
+    }
+}
+
+@keyframes scroll_mobile {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-600%);
     }
 }

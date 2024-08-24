@@ -62,4 +62,34 @@
         color: $white;
         text-decoration: none;
     }
+
+    @media (max-width: 768px) {
+        .lastdiv {
+            flex-direction: column-reverse;
+            padding: 1.5rem;
+            .icons {
+                transform: scale(0.75);
+            }
+            .navigations {
+                gap: 0;
+                flex-direction: column-reverse;
+                img {
+                    width: 15rem;
+                    margin: 1rem;
+                    height: 1px;
+                    opacity: 0.5;
+                }
+                .footer-logo {
+                    display: none;
+                }
+            }
+            .contacts {
+                align-items: center;
+                gap: 0.5rem;
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
 }

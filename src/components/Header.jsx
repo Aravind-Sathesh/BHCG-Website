@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import teal_logo from "../assets/teal_logo.webp";
 import white_logo from "../assets/white_logo.webp";
 
 const Header = (props) => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     const scrollToFooter = () => {
         props.footerRef.current.scrollIntoView({ behavior: "smooth" });
+        if (isMobileMenuOpen) setIsMobileMenuOpen(false); // Close the menu if open
     };
 
     return (
@@ -13,31 +20,65 @@ const Header = (props) => {
             <nav className="navbar">
                 <div className="logo">
                     <img
-                        src={props.type == "light" ? teal_logo : white_logo}
+                        src={props.type === "light" ? teal_logo : white_logo}
                         alt="BHCG Logo"
                     />
                 </div>
                 <div className="nav-container">
-                    <ul className="nav-links">
+                    <ul
+                        className={`nav-links ${
+                            isMobileMenuOpen ? "open" : ""
+                        }`}
+                    >
                         <li>
-                            <Link to="/home">Home</Link>
+                            <Link
+                                to="/home"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/team">Team</Link>
+                            <Link
+                                to="/team"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Team
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/consulting">Consulting</Link>
+                            <Link
+                                to="/consulting"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Consulting
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/product">Product</Link>
+                            <Link
+                                to="/product"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Product
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <Link
+                                to="/projects"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Projects
+                            </Link>
                         </li>
                         <li>
                             <Link onClick={scrollToFooter}>Contact Us</Link>
                         </li>
                     </ul>
+                </div>
+                <div className="hamburger" onClick={toggleMobileMenu}>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
                 </div>
             </nav>
         </header>

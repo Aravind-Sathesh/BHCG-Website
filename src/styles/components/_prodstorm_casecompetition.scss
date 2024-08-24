@@ -66,4 +66,37 @@
             max-width: 30%;
         }
     }
+
+    @media (max-width: 768px) {
+        .flex {
+            flex-direction: column;
+            width: 100%;
+            gap: 2rem;
+            .carousel {
+                p {
+                    font-size: 1rem;
+                    line-height: 1.75rem;
+                }
+                .carousel-control-next {
+                    padding-left: 1.4rem;
+                }
+
+                .carousel-control-prev {
+                    padding-right: 1.4rem;
+                }
+            }
+            .content {
+                margin: 0;
+                min-width: 100%;
+                min-height: 30rem;
+                h3 {
+                    font-size: 1.75rem;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
 }
