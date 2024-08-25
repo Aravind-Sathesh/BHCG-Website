@@ -1,6 +1,6 @@
 .ERRORPAGE {
     width: 100%;
-    font-family: "Poppins";
+    font-family: $body-font, sans-serif;
     height: 100vh;
     color: $light-teal;
     display: flex;

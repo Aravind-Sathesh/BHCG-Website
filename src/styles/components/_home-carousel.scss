@@ -6,7 +6,7 @@
         margin-top: 2rem;
     }
     .li {
-        font-family: "Poppins";
+        font-family: $body-font, sans-serif;
         font-size: 2rem;
     }
 
@@ -15,7 +15,7 @@
         justify-content: space-between;
         h2 {
             width: 70%;
-            font-family: "Roboto Serif";
+            font-family: $heading-font, serif;
             font-size: 4rem;
         }
         img {
@@ -39,7 +39,7 @@
         padding: 1rem;
         .header > h2 {
             width: 70%;
-            font-family: "Roboto Serif";
+            font-family: $heading-font, serif;
             font-size: 1.5rem;
         }
         .header > img {
@@ -50,7 +50,7 @@
             border-radius: 0.5rem;
         }
         > .list > .li {
-            font-family: "Poppins";
+            font-family: $body-font, sans-serif;
             font-size: 1.25rem !important;
         }
     }

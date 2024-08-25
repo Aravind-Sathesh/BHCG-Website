@@ -37,7 +37,7 @@
         padding-bottom: 4rem;
         margin-top: 3rem;
         text-align: left;
-        font-family: "Poppins";
+        font-family: $body-font, sans-serif;
         .text {
             background-color: $white;
             color: $teal;

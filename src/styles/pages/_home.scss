@@ -1,7 +1,7 @@
 @import "../components/home-carousel";
 
 .HOME {
-    font-family: "Poppins";
+    font-family: $body-font, sans-serif;
 
     .background {
         height: 100vh;
@@ -35,7 +35,7 @@
             margin-bottom: 0;
         }
         h3 {
-            font-family: "Roboto Serif";
+            font-family: $heading-font, serif;
             font-style: italic;
             padding: 3rem 0;
             font-weight: 300;
@@ -59,7 +59,7 @@
         text-align: center;
         align-items: center;
         justify-content: space-evenly;
-        font-family: "Roboto Serif";
+        font-family: $heading-font, serif;
         background-color: $teal;
         color: $white;
         padding: 5rem 0;
@@ -87,7 +87,7 @@
 
         h1 {
             padding: 3rem 0;
-            font-family: "Roboto Serif";
+            font-family: $heading-font, serif;
             font-weight: 600;
             width: 100%;
             color: $teal;

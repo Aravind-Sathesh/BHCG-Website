@@ -26,7 +26,7 @@
 
         .teal-heading {
             padding: 3rem 0;
-            font-family: "Roboto Serif";
+            font-family: $heading-font, serif;
             font-weight: 600;
             color: $teal;
         }
