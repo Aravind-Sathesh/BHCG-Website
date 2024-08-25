@@ -103,28 +103,21 @@ const Footer = ({ footerRef, headerRef }) => {
                 </div>
             </div>
             <div className="end flex">
-                {`© BHCG ${year + " | C"}`}
                 <Tooltip
                     title={
                         <div style={{ textAlign: "center" }}>
                             <Typography variant="body2">
-                                Aakrit Jain
+                                Aakrit Jain, Aravind Sathesh
                                 <br />
-                                Atiksh Gupta
+                                Atiksh Gupta, Rithvik Vallivedu
                                 <br />
-                                Aravind Sathesh
-                                <br />
-                                Rithvik Vallivedu
-                                <br />
-                                Vedika Kothawade
-                                <br />
-                                Anushka Bhatt
+                                Vedika Kothawade, Anushka Bhatt
                             </Typography>
                         </div>
                     }
                     placement="top"
                 >
-                    {"REDITS"}
+                    <span>{`© BHCG ${year} | CREDITS`}</span>
                 </Tooltip>
             </div>
         </footer>

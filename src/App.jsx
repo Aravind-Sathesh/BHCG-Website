@@ -5,6 +5,7 @@ import Product from "./pages/Product";
 import Consulting from "./pages/Consulting";
 import Projects from "./pages/Projects";
 import Team from "./pages/Team";
+import ErrorPage from "./pages/ErrorPage";
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
                 <Route path="/consulting" element={<Consulting />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/team" element={<Team />} />
+                <Route path="*" element={<ErrorPage />} />
             </Routes>
         </>
     );
