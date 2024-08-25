@@ -27,6 +27,9 @@
         border-radius: 1rem;
         text-align: center;
         box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+        p {
+            text-align: center;
+        }
     }
 
     .carousel {
@@ -36,7 +39,7 @@
         color: $teal;
         font-size: 1.5rem;
         p {
-            text-align: center;
+            text-align: justify;
         }
     }
 
