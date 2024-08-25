@@ -157,13 +157,13 @@
             position: relative;
             background: none;
             text-align: center;
+            transform: none;
             .photo {
                 border: #d9d9d9;
                 border-style: solid;
                 border-width: 0.5rem;
                 // width: 100%;
             }
-            transform: none;
         }
     }
 }

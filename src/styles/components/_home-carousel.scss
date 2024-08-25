@@ -5,7 +5,7 @@
     ul {
         margin-top: 2rem;
     }
-    li {
+    .li {
         font-family: "Poppins";
         font-size: 2rem;
     }
@@ -30,7 +30,7 @@
         .header > h2 {
             font-size: 3rem;
         }
-        li {
+        .li {
             font-size: 1.7rem;
         }
     }
@@ -49,7 +49,7 @@
             object-fit: cover;
             border-radius: 0.5rem;
         }
-        .list > li {
+        > .list > .li {
             font-family: "Poppins";
             font-size: 1.25rem !important;
         }

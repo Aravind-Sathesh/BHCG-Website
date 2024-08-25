@@ -73,13 +73,13 @@
                 min-height: 25rem;
                 width: 85%;
 
-                .carousel-inner {
+                > .carousel-inner {
                     padding: 0;
-                }
 
-                .carousel-item > .testimony {
-                    min-height: 23rem;
-                    font-size: 1rem !important;
+                    > .carousel-item > .testimony {
+                        min-height: 23rem;
+                        font-size: 1rem !important;
+                    }
                 }
                 .carousel-control-next {
                     padding-left: 1.4rem;

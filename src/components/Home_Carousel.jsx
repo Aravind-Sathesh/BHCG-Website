@@ -8,10 +8,10 @@ const Home_Carousel = (props) => {
                 <img src={props.path} alt={props.title} />
             </div>
             <ul className="list">
-                <li>{props.li_1}</li>
-                <li>{props.li_2}</li>
-                <li>{props.li_3}</li>
-                <li>{props.li_4}</li>
+                <li className="li">{props.li_1}</li>
+                <li className="li">{props.li_2}</li>
+                <li className="li">{props.li_3}</li>
+                <li className="li">{props.li_4}</li>
             </ul>
         </div>
     );
