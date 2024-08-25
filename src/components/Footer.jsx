@@ -103,7 +103,7 @@ const Footer = ({ footerRef, headerRef }) => {
                 </div>
             </div>
             <div className="end flex">
-                {`© BHCG ${year}ㅤ`}
+                {`© BHCG ${year + " | C"}`}
                 <Tooltip
                     title={
                         <div style={{ textAlign: "center" }}>
@@ -124,7 +124,7 @@ const Footer = ({ footerRef, headerRef }) => {
                     }
                     placement="top"
                 >
-                    {"|ㅤCREDITS"}
+                    {"REDITS"}
                 </Tooltip>
             </div>
         </footer>
