@@ -18,7 +18,7 @@
 
         .carousel-track {
             display: flex;
-            animation: scroll 150s linear infinite;
+            animation: scroll 60s linear infinite;
 
             .speaker {
                 flex: 0 0 auto;
@@ -64,7 +64,7 @@
                 }
             }
             @media (max-width: 768px) {
-                animation: scroll_mobile 60s linear infinite;
+                animation: scroll_mobile 45s linear infinite;
                 .speaker {
                     width: 100%;
                 }
