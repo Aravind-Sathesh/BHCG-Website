@@ -1,0 +1,4 @@
+user-agent: *
+Allow: /
+
+Sitemap: https://bhcg.netlify.app/sitemap.xml

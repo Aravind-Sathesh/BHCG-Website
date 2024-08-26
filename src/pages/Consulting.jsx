@@ -83,7 +83,7 @@ const Consulting = () => {
                         imageAlt="Business Model Chronicles"
                         title="Business Model Chronicles"
                         description="Provides weekly insights into successful businesses, focusing on operations, growth strategies, and frameworks. Focuses on product management, consulting, and understanding top companies."
-                        buttonText="Learn More"
+                        buttonText="Explore"
                         linkHref="https://www.instagram.com/explore/tags/businessmodelchronicles/"
                     />
                 </div>

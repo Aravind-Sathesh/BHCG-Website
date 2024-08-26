@@ -75,8 +75,16 @@ const Home = () => {
                 headerRef={headerRef}
             />
             <div className="HOME">
-                <img className="background" src={background} />
-                <img className="rectangle" src={rectangle} />
+                <img
+                    className="background"
+                    src={background}
+                    alt="BPHC Campus Background"
+                />
+                <img
+                    className="rectangle"
+                    src={rectangle}
+                    alt="Teal translucent filter"
+                />
                 <div className="hero">
                     <h1>BITS Hyderabad</h1>
                     <h1>Consulting Group</h1>
