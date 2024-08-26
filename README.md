@@ -27,5 +27,5 @@ A React Website to showcase the work of the BITS Hyderabad Consulting Group.
 
 -   Aravind Sathesh
 -   Anushka Bhatt
--   Jagrit Gupta
+-   Vedika Kothawade
 -   and more...
