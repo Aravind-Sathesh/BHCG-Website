@@ -11,7 +11,7 @@
     }
 
     h2 {
-        gap: 1rem;
+        gap: 0.5rem;
         font-size: 1.5rem;
         font-weight: 500;
         display: flex;
@@ -36,6 +36,10 @@
         font-family: $heading-font, serif;
         display: flex;
         flex-direction: column;
+        img {
+            width: 2rem;
+            margin-top: -0.25rem;
+        }
     }
 
     .gp-left-text {
@@ -73,6 +77,10 @@
         align-items: flex-end;
         padding: 1rem 10rem 1rem 5rem;
         text-align: right;
+        img {
+            width: 2rem;
+            margin-top: -0.25rem;
+        }
     }
 
     .gp-right-text {
