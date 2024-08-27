@@ -41,14 +41,14 @@ const Consulting_Speakers = () => {
                     />
                     <Speaker
                         imgSrc={c_4_profile}
-                        name="Vikash Jain"
-                        title="Managing Director"
+                        name="Sri Teja Allaparthi"
+                        title="Co-founder & CTO"
                         companyLogo={c_4_company}
                     />
                     <Speaker
                         imgSrc={c_5_profile}
-                        name="Sri Teja Allaparthi"
-                        title="Co-founder & CTO"
+                        name="Vikash Jain"
+                        title="Managing Director"
                         companyLogo={c_5_company}
                     />
                     <Speaker
@@ -77,8 +77,8 @@ const Consulting_Speakers = () => {
                     />
                     <Speaker
                         imgSrc={c_4_profile}
-                        name="Vikash Jain"
-                        title="Managing Director"
+                        name="Sri Teja Allaparthi"
+                        title="Co-founder & CTO"
                         companyLogo={c_4_company}
                     />
                 </div>
