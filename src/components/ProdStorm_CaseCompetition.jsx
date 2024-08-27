@@ -3,10 +3,10 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import car1 from "../assets/product_consulting/carousel_1.webp";
-import car2 from "../assets/product_consulting/carousel_2.webp";
-import car3 from "../assets/product_consulting/carousel_3.webp";
-import car4 from "../assets/product_consulting/carousel_4.webp";
+import car1 from "../assets/product_consulting/carousel_1.svg";
+import car2 from "../assets/product_consulting/carousel_2.svg";
+import car3 from "../assets/product_consulting/carousel_3.svg";
+import car4 from "../assets/product_consulting/carousel_4.svg";
 
 const ProdStorm_CaseCompetition = ({ title, children }) => {
     return (
