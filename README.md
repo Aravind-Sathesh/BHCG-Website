@@ -4,7 +4,6 @@
 
 -   [Introduction](#introduction)
 -   [Technologies Used](#technologies-used)
--   [Features](#features)
 -   [Developed by](#developed-by)
 -   [Designed by](#designed-by)
 
@@ -18,21 +17,15 @@ A React Website to showcase the work of the BITS Hyderabad Consulting Group.
 -   JavaScript (ES6+)
 -   SCSS
 
-## Features
-
--   Feature 1
--   Feature 2
--   Feature 3
-
 ## Developed by:
 
--   Aravind Sathesh
--   Atiksh Jain
--   Aakrit Gupta
+-   Aravind Sathesh (React)
+-   Atiksh Jain (HTML & CSS)
+-   Aakrit Gupta (HTML & CSS)
 
 ## Designed by:
 
 -   Aravind Sathesh
 -   Anushka Bhatt
--   Jagrit Gupta
+-   Vedika Kothawade
 -   and more...
