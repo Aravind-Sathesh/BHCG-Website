@@ -39,7 +39,7 @@ const Team = () => {
                         name={"Anish Pathak"}
                         profile={por_1}
                         information={
-                            "Anish Pathak is currently in his 3rd year pursuing a B.E. in Electrical and Electronics Engineering. As an active member of the Consulting Team for the past few semesters, he has made significant contributions to live projects, organized Atmos events, headed Finnovate events, managed speaker pitching, and supported various club activities. Beyond his academic and professional commitments, Anish is also a passionate photographer and a sports enthusiast."
+                            "Anish Pathak is in his 3rd year pursuing a B.E. in Electrical and Electronics Engineering. As the President of BHCG, he provides strategic direction and ensures the club's growth. Anish has been instrumental in driving success across multiple live projects, spearheading key events, and leading initiatives to enhance engagement. He cultivates a collaborative culture,  inspires innovation, and sets the vision for the club's future through his leadership. Outside of his professional and academic pursuits, Anish is a passionate photographer and sports enthusiast, bringing creativity and energy to all he does."
                         }
                         link={
                             "https://www.linkedin.com/in/anish-pathak-71961026b/"
