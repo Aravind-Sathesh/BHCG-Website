@@ -4,7 +4,7 @@
     font-family: $body-font, sans-serif;
 
     .background {
-        height: 100vh;
+        height: max(100vh, 45rem);
         width: 100%;
         object-fit: cover;
         transform: translateY(-10rem);
@@ -13,7 +13,7 @@
     }
 
     .rectangle {
-        height: calc(100vh - 10rem);
+        height: max(calc(100vh - 10rem), 35rem);
         width: 100%;
         z-index: -2;
         position: absolute;
@@ -25,6 +25,7 @@
         padding-right: 5rem;
         padding-left: 5rem;
         padding-bottom: calc(100vh - 49rem);
+        height: max(calc(100vh - 10rem), 35rem);
         position: relative;
         z-index: 5;
         h1 {
@@ -37,9 +38,9 @@
         h3 {
             font-family: $heading-font, serif;
             font-style: italic;
-            padding: 3rem 0;
+            padding-top: 3rem;
             font-weight: 300;
-            height: 15rem;
+            height: 10rem;
             margin-bottom: 0;
         }
     }
