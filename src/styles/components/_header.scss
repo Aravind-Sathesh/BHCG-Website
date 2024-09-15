@@ -23,6 +23,10 @@
         img {
             height: 10rem;
         }
+
+        .bits-logo {
+            padding: 1.5rem;
+        }
     }
 
     .nav-container {
@@ -157,6 +161,15 @@
 
         .hamburger .line {
             background-color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .HEADER {
+        .logo {
+            transform: scale(0.6);
+            margin-left: -3.5rem;
         }
     }
 }

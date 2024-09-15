@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import teal_logo from "../assets/teal_logo.webp";
 import white_logo from "../assets/white_logo.webp";
+import bits_teal_logo from "../assets/bits-logo-teal.webp";
+import bits_white_logo from "../assets/bits-logo-white.webp";
 
 const Header = (props) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,8 +21,21 @@ const Header = (props) => {
         <header className={props.type + " HEADER"} ref={props.headerRef}>
             <nav className="navbar">
                 <div className="logo">
+                    <Link to="/home">
+                        <img
+                            src={
+                                props.type === "light" ? teal_logo : white_logo
+                            }
+                            alt="BHCG Logo"
+                        />
+                    </Link>
                     <img
-                        src={props.type === "light" ? teal_logo : white_logo}
+                        src={
+                            props.type === "light"
+                                ? bits_teal_logo
+                                : bits_white_logo
+                        }
+                        className="bits-logo"
                         alt="BHCG Logo"
                     />
                 </div>
