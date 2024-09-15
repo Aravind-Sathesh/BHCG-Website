@@ -39,7 +39,7 @@
         color: $teal;
         font-size: 1.5rem;
         p {
-            text-align: justify;
+            text-align: center;
         }
     }
 
@@ -81,8 +81,8 @@
             gap: 2rem;
             .carousel {
                 p {
-                    font-size: 1rem;
-                    line-height: 1.75rem;
+                    font-size: 0.85rem;
+                    line-height: 1.5rem;
                 }
                 .carousel-control-next {
                     padding-left: 1.4rem;
