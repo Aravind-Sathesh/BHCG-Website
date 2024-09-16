@@ -62,6 +62,7 @@ const Consulting_Speakers = () => {
             <Carousel
                 controls={true}
                 indicators={false}
+                hover={false}
                 interval={8000}
                 wrap={true}
             >

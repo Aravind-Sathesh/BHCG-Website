@@ -1,10 +1,10 @@
 /* Keyframes for infinite scrolling */
 @keyframes slowscroll {
     0% {
-        transform: translateX(5%);
+        transform: translateX(2%);
     }
     100% {
-        transform: translateX(-5%);
+        transform: translateX(-2%);
     }
 }
 
@@ -110,12 +110,12 @@
 
     @media (max-width: 768px) {
         /* Keyframes for infinite scrolling */
-        @keyframes scroll {
+        @keyframes slowscroll {
             0% {
-                transform: translateX(15%);
+                transform: translateX(5%);
             }
             100% {
-                transform: translateX(-15%);
+                transform: translateX(-5%);
             }
         }
         .carousel {
