@@ -63,7 +63,6 @@ const Consulting_Speakers = () => {
                 controls={true}
                 indicators={false}
                 interval={8000}
-                pause="hover"
                 wrap={true}
             >
                 {Array.from({
