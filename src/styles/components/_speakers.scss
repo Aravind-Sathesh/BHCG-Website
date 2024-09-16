@@ -1,3 +1,13 @@
+/* Keyframes for infinite scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(-5%);
+    }
+}
+
 .Speakers {
     text-align: center;
     background-color: $light-teal;
@@ -16,14 +26,35 @@
         overflow: hidden;
         position: relative;
 
+        .carousel-control-prev {
+            top: -20%;
+            left: -4%;
+        }
+
+        .carousel-control-next {
+            top: -20%;
+            right: -4%;
+        }
+
         .carousel-track {
             display: flex;
-            animation: scroll 60s linear infinite;
+            justify-content: center;
+            animation: scroll 10s linear infinite;
+
+            &:hover,
+            &:active,
+            &:focus {
+                animation: none;
+            }
+            .speaker-group {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
 
             .speaker {
-                flex: 0 0 auto;
-                width: 25%;
-                margin: 0 10px;
+                flex: 0 0 30%;
+                margin: 0 1.5%;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -63,30 +94,43 @@
                     border-width: 1px;
                 }
             }
-            @media (max-width: 768px) {
-                animation: scroll_mobile 45s linear infinite;
+        }
+
+        .carousel-track::before,
+        .carousel-track::after {
+            content: "";
+            flex: 0 0 0;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        /* Keyframes for infinite scrolling */
+        @keyframes scroll {
+            0% {
+                transform: translateX(15%);
+            }
+            100% {
+                transform: translateX(-15%);
+            }
+        }
+        .carousel {
+            .carousel-control-prev {
+                left: -3%;
+            }
+
+            .carousel-control-next {
+                right: -3%;
+            }
+            .carousel-track {
+                .speaker-group {
+                    flex-direction: column;
+                }
                 .speaker {
-                    width: 100%;
+                    flex: 0 0 100%;
+                    margin: 0;
                 }
             }
         }
-    }
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-156%);
-    }
-}
-
-@keyframes scroll_mobile {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-600%);
     }
 }
