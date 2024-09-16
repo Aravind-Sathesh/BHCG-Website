@@ -42,14 +42,6 @@ const Header = (props) => {
         >
             <nav className="navbar">
                 <div className="logo">
-                    <Link to="/home">
-                        <img
-                            src={
-                                props.type === "light" ? teal_logo : white_logo
-                            }
-                            alt="BHCG Logo"
-                        />
-                    </Link>
                     <img
                         src={
                             props.type === "light"
@@ -59,6 +51,14 @@ const Header = (props) => {
                         className="bits-logo"
                         alt="BHCG Logo"
                     />
+                    <Link to="/home">
+                        <img
+                            src={
+                                props.type === "light" ? teal_logo : white_logo
+                            }
+                            alt="BHCG Logo"
+                        />
+                    </Link>
                 </div>
                 <div className="nav-container">
                     <ul
