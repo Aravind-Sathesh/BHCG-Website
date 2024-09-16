@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import teal_logo from "../assets/teal_logo.webp";
 import white_logo from "../assets/white_logo.webp";
@@ -7,6 +7,24 @@ import bits_white_logo from "../assets/bits-logo-white.webp";
 
 const Header = (props) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                // Adjust threshold as needed
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -18,7 +36,10 @@ const Header = (props) => {
     };
 
     return (
-        <header className={props.type + " HEADER"} ref={props.headerRef}>
+        <header
+            className={props.type + " HEADER " + isScrolled}
+            ref={props.headerRef}
+        >
             <nav className="navbar">
                 <div className="logo">
                     <Link to="/home">

@@ -1,12 +1,15 @@
 .HEADER {
     padding: 0;
     margin: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     height: 10rem;
     box-sizing: border-box;
     font-family: $body-font, sans-serif;
     font-size: 1.1rem;
-    position: relative;
-    z-index: 1;
+    position: sticky;
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -142,6 +145,12 @@
 
     &.colour {
         background-color: $transparent-teal;
+        transition: 1s;
+
+        &.true {
+            background-color: $light-teal;
+            transition: 1s;
+        }
 
         .nav-container {
             color: #fff;
@@ -163,6 +172,11 @@
             background-color: #fff;
         }
     }
+
+    &.true {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: 1s;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -170,9 +184,6 @@
         .logo {
             transform: scale(0.6);
             margin-left: -3.5rem;
-        }
-        .navbar {
-            margin-top: -1.5rem;
         }
     }
 }
