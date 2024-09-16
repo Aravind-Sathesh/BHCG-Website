@@ -57,7 +57,7 @@ const speakerData = [
 
 const Consulting_Speakers = () => {
     return (
-        <div className="Speakers">
+        <div className="Consulting Speakers">
             <h1>Past Speakers</h1>
             <Carousel
                 controls={true}

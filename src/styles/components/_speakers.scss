@@ -1,10 +1,19 @@
 /* Keyframes for infinite scrolling */
-@keyframes scroll {
+@keyframes slowscroll {
     0% {
         transform: translateX(5%);
     }
     100% {
         transform: translateX(-5%);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -39,7 +48,7 @@
         .carousel-track {
             display: flex;
             justify-content: center;
-            animation: scroll 10s linear infinite;
+            animation: scroll 90s linear infinite;
 
             .speaker-group {
                 display: flex;
@@ -127,5 +136,11 @@
                 }
             }
         }
+    }
+}
+
+.Consulting {
+    .carousel-track {
+        animation: slowscroll 10s linear infinite !important;
     }
 }
