@@ -15,72 +15,84 @@ import p_4_company from "../assets/product_consulting/product_speakers/p_4_compa
 import p_5_company from "../assets/product_consulting/product_speakers/p_5_company.webp";
 import p_6_company from "../assets/product_consulting/product_speakers/p_6_company.webp";
 
+const speakersData = [
+    {
+        imgSrc: p_1_profile,
+        name: "Raam G",
+        title: "Founder",
+        companyLogo: p_1_company,
+    },
+    {
+        imgSrc: p_2_profile,
+        name: "Sravya VSV",
+        title: "Product Manager",
+        companyLogo: p_2_company,
+    },
+    {
+        imgSrc: p_3_profile,
+        name: "Keshav Mahajan",
+        title: "Product Manager",
+        companyLogo: p_3_company,
+    },
+    {
+        imgSrc: p_4_profile,
+        name: "Prateek Saxena",
+        title: "Senior Product Manager",
+        companyLogo: p_4_company,
+    },
+    {
+        imgSrc: p_5_profile,
+        name: "Prateek Dudeja",
+        title: "Product Manager",
+        companyLogo: p_5_company,
+    },
+    {
+        imgSrc: p_6_profile,
+        name: "Ayan Vora",
+        title: "Product Analytics",
+        companyLogo: p_6_company,
+    },
+    {
+        imgSrc: p_1_profile,
+        name: "Raam G",
+        title: "Founder",
+        companyLogo: p_1_company,
+    },
+    {
+        imgSrc: p_2_profile,
+        name: "Sravya VSV",
+        title: "Product Manager",
+        companyLogo: p_2_company,
+    },
+    {
+        imgSrc: p_3_profile,
+        name: "Keshav Mahajan",
+        title: "Product Manager",
+        companyLogo: p_3_company,
+    },
+    {
+        imgSrc: p_4_profile,
+        name: "Prateek Saxena",
+        title: "Senior Product Manager",
+        companyLogo: p_4_company,
+    },
+];
+
 const Product_Speakers = () => {
     return (
         <div className="Speakers">
             <h1>Past Speakers</h1>
             <div className="carousel">
                 <div className="carousel-track">
-                    <Speaker
-                        imgSrc={p_1_profile}
-                        name="Raam G"
-                        title="Founder"
-                        companyLogo={p_1_company}
-                    />
-                    <Speaker
-                        imgSrc={p_2_profile}
-                        name="Sravya VSV"
-                        title="Product Manager"
-                        companyLogo={p_2_company}
-                    />
-                    <Speaker
-                        imgSrc={p_3_profile}
-                        name="Keshav Mahajan"
-                        title="Product Manager"
-                        companyLogo={p_3_company}
-                    />
-                    <Speaker
-                        imgSrc={p_4_profile}
-                        name="Prateek Saxena"
-                        title="Senior Product Manager"
-                        companyLogo={p_4_company}
-                    />
-                    <Speaker
-                        imgSrc={p_5_profile}
-                        name="Prateek Dudeja"
-                        title="Product Manager"
-                        companyLogo={p_5_company}
-                    />
-                    <Speaker
-                        imgSrc={p_6_profile}
-                        name="Ayan Vora"
-                        title="Product Analytics"
-                        companyLogo={p_6_company}
-                    />
-                    <Speaker
-                        imgSrc={p_1_profile}
-                        name="Raam G"
-                        title="Founder"
-                        companyLogo={p_1_company}
-                    />
-                    <Speaker
-                        imgSrc={p_2_profile}
-                        name="Sravya VSV"
-                        title="Product Manager"
-                        companyLogo={p_2_company}
-                    />
-                    <Speaker
-                        imgSrc={p_3_profile}
-                        name="Keshav Mahajan"
-                        title="Product Manager"
-                        companyLogo={p_3_company}
-                    />
-                    <Speaker
-                        imgSrc={p_4_profile}
-                        name="Prateek Saxena"
-                        title="Senior Product Manager"
-                        companyLogo={p_4_company}
-                    />
+                    {speakersData.map((speaker, index) => (
+                        <Speaker
+                            key={index}
+                            imgSrc={speaker.imgSrc}
+                            name={speaker.name}
+                            title={speaker.title}
+                            companyLogo={speaker.companyLogo}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
