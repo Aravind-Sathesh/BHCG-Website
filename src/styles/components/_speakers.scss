@@ -41,11 +41,6 @@
             justify-content: center;
             animation: scroll 10s linear infinite;
 
-            &:hover,
-            &:active,
-            &:focus {
-                animation: none;
-            }
             .speaker-group {
                 display: flex;
                 justify-content: space-between;
