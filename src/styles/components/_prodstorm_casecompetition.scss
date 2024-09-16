@@ -68,14 +68,14 @@
         }
     }
 
-    @media (max-width: 1500px) {
+    @media screen and (max-width: 1500px) {
         .content {
             min-width: 30%;
             max-width: 30%;
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         .flex {
             flex-direction: column;
             width: 100%;
@@ -107,7 +107,7 @@
             }
         }
     }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         padding: 4rem 2rem;
     }
 }

@@ -63,7 +63,7 @@
         text-decoration: none;
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         .lastdiv {
             flex-direction: column-reverse;
             padding: 1.5rem;

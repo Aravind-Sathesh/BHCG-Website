@@ -61,7 +61,7 @@
             fill: $white;
         }
     }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         width: 85%;
         min-height: 42rem;
         h3 {

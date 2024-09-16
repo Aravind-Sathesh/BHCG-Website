@@ -36,7 +36,7 @@
         height: 5rem;
         border-radius: 30px;
         box-sizing: border-box;
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             width: auto;
         }
 
@@ -65,7 +65,7 @@
             }
 
             // Hamburger menu functionality
-            @media (max-width: 768px) {
+            @media screen and (max-width: 768px) {
                 flex-direction: column;
                 position: absolute;
                 top: 10rem;
@@ -100,7 +100,7 @@
         cursor: pointer;
         padding: 1rem;
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             display: block;
         }
 
