@@ -12,7 +12,6 @@ const Header = (props) => {
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
-                // Adjust threshold as needed
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
@@ -32,7 +31,7 @@ const Header = (props) => {
 
     const scrollToFooter = () => {
         props.footerRef.current.scrollIntoView({ behavior: "smooth" });
-        if (isMobileMenuOpen) setIsMobileMenuOpen(false); // Close the menu if open
+        if (isMobileMenuOpen) setIsMobileMenuOpen(false);
     };
 
     return (

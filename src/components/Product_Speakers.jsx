@@ -15,88 +15,57 @@ import p_4_company from "../assets/product_consulting/product_speakers/p_4_compa
 import p_5_company from "../assets/product_consulting/product_speakers/p_5_company.webp";
 import p_6_company from "../assets/product_consulting/product_speakers/p_6_company.webp";
 
-const speakersData = [
-    {
-        imgSrc: p_1_profile,
-        name: "Raam G",
-        title: "Founder",
-        companyLogo: p_1_company,
-    },
-    {
-        imgSrc: p_2_profile,
-        name: "Sravya VSV",
-        title: "Product Manager",
-        companyLogo: p_2_company,
-    },
-    {
-        imgSrc: p_3_profile,
-        name: "Keshav Mahajan",
-        title: "Product Manager",
-        companyLogo: p_3_company,
-    },
-    {
-        imgSrc: p_4_profile,
-        name: "Prateek Saxena",
-        title: "Senior Product Manager",
-        companyLogo: p_4_company,
-    },
-    {
-        imgSrc: p_5_profile,
-        name: "Prateek Dudeja",
-        title: "Product Manager",
-        companyLogo: p_5_company,
-    },
-    {
-        imgSrc: p_6_profile,
-        name: "Ayan Vora",
-        title: "Product Analytics",
-        companyLogo: p_6_company,
-    },
-    {
-        imgSrc: p_1_profile,
-        name: "Raam G",
-        title: "Founder",
-        companyLogo: p_1_company,
-    },
-    {
-        imgSrc: p_2_profile,
-        name: "Sravya VSV",
-        title: "Product Manager",
-        companyLogo: p_2_company,
-    },
-    {
-        imgSrc: p_3_profile,
-        name: "Keshav Mahajan",
-        title: "Product Manager",
-        companyLogo: p_3_company,
-    },
-    {
-        imgSrc: p_4_profile,
-        name: "Prateek Saxena",
-        title: "Senior Product Manager",
-        companyLogo: p_4_company,
-    },
+const profiles = [
+    p_1_profile,
+    p_2_profile,
+    p_3_profile,
+    p_4_profile,
+    p_5_profile,
+    p_6_profile,
+];
+const companies = [
+    p_1_company,
+    p_2_company,
+    p_3_company,
+    p_4_company,
+    p_5_company,
+    p_6_company,
 ];
 
-const Product_Speakers = () => {
-    return (
-        <div className="Speakers">
-            <h1>Past Speakers</h1>
-            <div className="carousel">
-                <div className="carousel-track">
-                    {speakersData.map((speaker, index) => (
-                        <Speaker
-                            key={index}
-                            imgSrc={speaker.imgSrc}
-                            name={speaker.name}
-                            title={speaker.title}
-                            companyLogo={speaker.companyLogo}
-                        />
-                    ))}
-                </div>
+const speakersInfo = [
+    { name: "Raam G", title: "Founder" },
+    { name: "Sravya VSV", title: "Product Manager" },
+    { name: "Keshav Mahajan", title: "Product Manager" },
+    { name: "Prateek Saxena", title: "Senior Product Manager" },
+    { name: "Prateek Dudeja", title: "Product Manager" },
+    { name: "Ayan Vora", title: "Product Analytics" },
+];
+
+const speakerData = speakersInfo.map((speaker, index) => ({
+    ...speaker,
+    imgSrc: profiles[index],
+    companyLogo: companies[index],
+}));
+
+const extendedSpeakerData = [...speakerData, ...speakerData.slice(0, 4)];
+
+const Product_Speakers = () => (
+    <div className="Speakers">
+        <h1>Past Speakers</h1>
+        <div className="carousel">
+            <div className="carousel-track">
+                {extendedSpeakerData.map((speaker, index) => (
+                    <Speaker
+                        key={index}
+                        imgSrc={speaker.imgSrc}
+                        name={speaker.name}
+                        title={speaker.title}
+                        companyLogo={speaker.companyLogo}
+                    />
+                ))}
             </div>
         </div>
-    );
-};
+    </div>
+);
 
 export default Product_Speakers;
