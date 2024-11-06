@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"title": "Product Management Workshop",
+		"date": "9/11/2024",
+		"description": "Join us for an insightful Product Management workshop designed to equip you with essential knowledge and skills. Dive into current market trends, learn how to get started, master root cause analysis, and explore real-world case studies to enhance your expertise.",
+		"location": "Classroom F101, BITS Pilani, Hyderabad Campus",
+		"time": "2:00 PM - 6:00 PM"
+	},
+	{
+		"id": 2,
+		"title": "Break The Case",
+		"date": "10/11/2024",
+		"description": "Experience the excitement of Break The Case at ATMOS 2024, BITS Hyderabad's premier consulting competition. Test your strategic thinking with real-world challenges and compete for prizes worth Rs. 30,000.",
+		"location": "Classroom F101, BITS Pilani, Hyderabad Campus",
+		"time": "10:00 AM - 1:00 PM"
+	},
+	{
+		"id": 3,
+		"title": "ProdTrix 2.0",
+		"date": "10/11/2024",
+		"description": "Join us for the ultimate product management teardown featuring a challenging quiz, in-depth case studies, and an exhilarating presentation session!",
+		"location": "Online",
+		"time": "2:00 PM - 6:00 PM"
+	},
+	{
+		"id": 4,
+		"title": "Guesstimate Workshop",
+		"date": "21/8/2024",
+		"description": "Experience the Guesstimate Workshop 2024 at BITS Hyderabad, where freshers sharpened their problem-solving skills through interactive sessions and real-world challenges. Join future events by BITS Hyderabad Consulting Group and ignite your potential!",
+		"location": "Classroom F207, BITS Pilani, Hyderabad Campus",
+		"time": "7:30 PM - 9:00 PM"
+	}
+]
