@@ -1,0 +1,153 @@
+[
+	{
+		"id": 1,
+		"imagePath": "/alumni-photos/Alumni_00001.webp",
+		"name": "Abhilash Kalyanakrishnan",
+		"achievements": ["Product Intern at Zaggle"],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://www.linkedin.com/in/abhilash-kalyanakrishnan-147225253"
+	},
+	{
+		"id": 2,
+		"imagePath": "/alumni-photos/Alumni_00002.webp",
+		"name": "Shashank Kumar",
+		"achievements": ["Ex-Research Intern @ LRDE DRDO & CSIR-CEERI, Pilani"],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://www.linkedin.com/in/shashank-kumar-b408651a9"
+	},
+	{
+		"id": 3,
+		"imagePath": "/alumni-photos/Alumni_00003.webp",
+		"name": "Varun Srinivas",
+		"achievements": [
+			"Runner-up, Techolution AI Hackathon",
+			"Runner-up, HERE Maps Hackathon"
+		],
+		"graduatingYear": 2024,
+		"linkedinProfile": "https://www.linkedin.com/in/varunsrini"
+	},
+	{
+		"id": 4,
+		"imagePath": "/alumni-photos/Alumni_00004.webp",
+		"name": "Shubham Jain",
+		"achievements": [
+			"Product Manager at Quizizz",
+			"Ex - Product Manager at Cred",
+			"Founding President, BITS Hyderabad Consulting Group"
+		],
+		"graduatingYear": 2021,
+		"linkedinProfile": "https://www.linkedin.com/in/jain3120"
+	},
+	{
+		"id": 5,
+		"imagePath": "/alumni-photos/Alumni_00005.webp",
+		"name": "Shreyansh Garg",
+		"achievements": ["Interned at Nomura, EY, and Niro"],
+		"graduatingYear": 2024,
+		"linkedinProfile": "https://www.linkedin.com/in/shreyansh-garg-02"
+	},
+	{
+		"id": 6,
+		"imagePath": "/alumni-photos/Alumni_00006.webp",
+		"name": "Adarsh Kumar Rai",
+		"achievements": ["Co-launched the first edition of the BHCG Casebook"],
+		"graduatingYear": 2023,
+		"linkedinProfile": "https://www.linkedin.com/in/adarsh-rai-123351188"
+	},
+	{
+		"id": 7,
+		"imagePath": "/alumni-photos/Alumni_00007.webp",
+		"name": "Bhanu Parihar",
+		"achievements": [
+			"VP, Consulting Division - BHCG",
+			"Consulting Intern at KPMG (Aerospace and Defence)",
+			"Internship in Indian Navy Warship Manufacturing"
+		],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://www.linkedin.com/in/bhanuparihar"
+	},
+	{
+		"id": 8,
+		"imagePath": "/alumni-photos/Alumni_00008.webp",
+		"name": "Ayaan Aryan",
+		"achievements": ["Ex - President, BITS Hyderabad Consulting Group"],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://www.linkedin.com/in/ayaan-aryan-65230b1a5"
+	},
+	{
+		"id": 9,
+		"imagePath": "/alumni-photos/Alumni_00009.webp",
+		"name": "Mihir Ganwani",
+		"achievements": [
+			"Published research papers in IEEE",
+			"DoSH CoStAAn",
+			"Skating Captain"
+		],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://www.linkedin.com/in/mihir-ganwani-b98918231"
+	},
+	{
+		"id": 10,
+		"imagePath": "/alumni-photos/Alumni_00010.webp",
+		"name": "Ayush Ranjan Jha",
+		"achievements": ["Business Analyst (AI Research) @ Impact Analytics"],
+		"graduatingYear": 2024,
+		"linkedinProfile": "https://www.linkedin.com/in/ayushjha3179"
+	},
+	{
+		"id": 11,
+		"imagePath": "/alumni-photos/Alumni_00011.webp",
+		"name": "Aryan Verma",
+		"achievements": [
+			"Authored a thesis on product management",
+			"Completed two product management internships",
+			"Hosted CXO talks on campus"
+		],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://in.linkedin.com/in/aryan-verma-bits"
+	},
+	{
+		"id": 12,
+		"imagePath": "/alumni-photos/Alumni_00012.webp",
+		"name": "Aryan Basantani",
+		"achievements": [
+			"Launched Prod-eezy in Spring 2023",
+			"Co-authored both editions of the Consulting Casebook",
+			"Product Intern at JPMC",
+			"Worked at MoveInSync"
+		],
+		"graduatingYear": 2024,
+		"linkedinProfile": "https://www.linkedin.com/in/aryanbasantani"
+	},
+	{
+		"id": 13,
+		"imagePath": "/alumni-photos/Alumni_00013.webp",
+		"name": "Nitish Bhide",
+		"achievements": [
+			"Product Management Intern at Proptechbuzz",
+			"2nd place in Product Forge"
+		],
+		"graduatingYear": 2024,
+		"linkedinProfile": "https://www.linkedin.com/in/nitish-bhide-24705523a"
+	},
+	{
+		"id": 14,
+		"imagePath": "/alumni-photos/Alumni_00014.webp",
+		"name": "Khushi Sehgal",
+		"achievements": [],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://www.linkedin.com/in/khushi-sehgal-a4a40a25a"
+	},
+	{
+		"id": 15,
+		"imagePath": "/alumni-photos/Alumni_00015.webp",
+		"name": "Kartikeya Tandon",
+		"achievements": [
+			"Market research for FundsVita at BHCG",
+			"President, The Wall Street Club",
+			"Consulting Director, 180 Degrees Consulting"
+		],
+		"graduatingYear": 2025,
+		"linkedinProfile": "https://www.linkedin.com/in/kartikeya-tandon-419485237"
+	}
+]

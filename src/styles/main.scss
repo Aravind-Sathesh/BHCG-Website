@@ -1,15 +1,24 @@
-@import "./typography";
-@import "./variables";
-@import "./components/header";
-@import "./components/footer";
+@import './typography';
+@import './variables';
+@import './components/header';
+@import './components/footer';
 
-@import "./pages/home";
-@import "./pages/product";
-@import "./pages/projects";
-@import "./pages/consulting";
-@import "./pages/team";
-@import "./pages/errorpage";
+@import './pages/home';
+@import './pages/product';
+@import './pages/projects';
+@import './pages/resources';
+@import './pages/consulting';
+@import './pages/team';
+@import './pages/alumni';
+@import './pages/errorpage';
+@import './pages/blog-page';
 
 * {
-    margin: 0;
+	margin: 0;
+}
+
+@media (max-width: 600px) {
+	.baseline {
+		display: none;
+	}
 }

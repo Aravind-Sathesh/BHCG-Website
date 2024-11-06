@@ -1,0 +1,18 @@
+.ALUMNI {
+	display: flex;
+	background: linear-gradient($light-teal, $teal);
+	flex-direction: column;
+	align-items: center;
+	.flexwrap {
+		display: flex;
+		width: 90%;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	@media screen and (max-width: 768px) {
+		.baselinediv {
+			display: none;
+		}
+	}
+}
