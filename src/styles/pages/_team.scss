@@ -1,67 +1,67 @@
-@import "../components/leader";
+@import '../components/leader';
 
 .TEAM {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    .team-heading {
-        text-align: center;
-        img {
-            width: 70%;
-            padding: 1rem 0;
-        }
-    }
+	.team-heading {
+		text-align: center;
+		img {
+			width: 70%;
+			padding: 1rem 0;
+		}
+	}
 
-    .team-photo {
-        text-align: center;
-        img {
-            width: 80%;
-            padding: 2rem;
-        }
-    }
+	.team-photo {
+		text-align: center;
+		img {
+			width: 80%;
+			padding: 2rem;
+		}
+	}
 
-    & > h1 {
-        font-family: $heading-font, serif;
-        font-weight: 600;
-        text-align: center;
-        font-size: 3rem;
-        width: 100%;
-        color: $teal;
-        padding: 2.5rem 0;
-    }
+	& > h1 {
+		font-family: $heading-font, serif;
+		font-weight: 600;
+		text-align: center;
+		font-size: 3rem;
+		width: 100%;
+		color: $teal;
+		padding: 2.5rem 0;
+	}
 
-    .porContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+	.porContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 
-    .baseline {
-        align-self: center;
-        padding: 4rem;
-        width: 70%;
-    }
+	.baseline {
+		align-self: center;
+		padding: 0 0 3rem 0;
+		width: 70%;
+	}
 
-    @media screen and (max-width: 768px) {
-        overflow-x: hidden;
-        .team-heading > img {
-            width: 90%;
-        }
+	@media screen and (max-width: 768px) {
+		overflow-x: hidden;
+		.team-heading > img {
+			width: 90%;
+		}
 
-        .team-photo > img {
-            width: 90%;
-            padding: 1rem 0;
-        }
+		.team-photo > img {
+			width: 90%;
+			padding: 1rem 0;
+		}
 
-        > h1 {
-            font-size: calc(1.375rem + 1.5vw);
-            width: 100%;
-            padding: 1rem;
-        }
-        .baseline {
-            height: 0px;
-            padding: 0.5rem;
-        }
-    }
+		> h1 {
+			font-size: calc(1.375rem + 1.5vw);
+			width: 100%;
+			padding: 1rem;
+		}
+		.baseline {
+			height: 0px;
+			padding: 0.5rem;
+		}
+	}
 }

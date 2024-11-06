@@ -1,0 +1,133 @@
+.BLOG {
+	background: linear-gradient($light-teal, $teal);
+	.blog-page {
+		margin-top: 3rem;
+		padding: 2rem;
+		font-family: $body-font, 'sans-serif';
+		max-width: 60rem;
+		color: #333;
+		margin: auto;
+		.blog {
+			padding: 2rem;
+		}
+
+		.return-button {
+			display: flex;
+			justify-content: flex-start;
+			margin: -2rem 0 1rem 0;
+
+			button {
+				background-color: $white;
+				color: $teal;
+				font-family: $body-font, 'sans-serif';
+				border-radius: 50px;
+				padding: 0.5rem 1.5rem;
+				text-transform: none;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				border: none;
+
+				&:hover {
+					background-color: $teal;
+					color: $white;
+					box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+				}
+			}
+		}
+
+		h1 {
+			font-size: 3rem;
+			color: $teal;
+			margin-bottom: 1rem;
+
+			@media screen and (max-width: 768px) {
+				font-size: 2rem;
+			}
+		}
+
+		h2 {
+			color: $teal;
+			margin-bottom: 1rem;
+		}
+
+		a {
+			color: $light-teal;
+		}
+
+		.author-date {
+			font-size: 1rem;
+			color: $light-teal;
+			margin: 1rem 0;
+			font-weight: 500;
+
+			strong {
+				font-weight: 600;
+				color: $teal;
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: 0.9rem;
+				margin: 0.75rem 0;
+			}
+		}
+
+		.content {
+			line-height: 1.6;
+			font-size: 1.1rem;
+
+			p {
+				margin-bottom: 1.2rem;
+
+				&:first-of-type {
+					font-weight: 600;
+				}
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: 0.8rem;
+			}
+		}
+		hr {
+			margin: 1rem 0;
+			background-color: $light-teal;
+		}
+	}
+
+	.return-to-top {
+		position: fixed;
+		bottom: 7.5rem;
+		right: 7.5rem;
+		background-color: $white;
+		color: $teal;
+		border: none;
+		border-radius: 50%;
+		width: 3rem;
+		height: 3rem;
+		opacity: 0;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+		transition: all 0.2s ease-in-out, opacity 0.5s ease-in-out;
+
+		&.show {
+			opacity: 1;
+		}
+
+		&:hover {
+			color: $white;
+			background-color: $light-teal;
+		}
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	.blog-baselinediv {
+		text-align: center;
+		padding: 1rem 0;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+}

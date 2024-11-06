@@ -1,154 +1,131 @@
-@import "../components/home-carousel";
+@import '../components/home-carousel';
 
 .HOME {
-    font-family: $body-font, sans-serif;
+	font-family: $body-font, sans-serif;
 
-    .background {
-        height: max(100vh, 45rem);
-        width: 100%;
-        object-fit: cover;
-        transform: translateY(-10rem);
-        position: absolute;
-        z-index: -3;
-    }
+	.background {
+		height: max(calc(100vh + 2rem), 47rem);
+		width: 100%;
+		object-fit: cover;
+		transform: translateY(-10rem);
+		position: absolute;
+		z-index: -3;
+	}
 
-    .rectangle {
-        height: max(calc(100vh - 10rem), 35rem);
-        width: 100%;
-        z-index: -2;
-        position: absolute;
-    }
+	.rectangle {
+		height: max(calc(100vh - 8rem), 37rem);
+		width: 100%;
+		z-index: -2;
+		position: absolute;
+	}
 
-    .hero {
-        color: $white;
-        padding-top: 10rem;
-        padding-right: 5rem;
-        padding-left: 5rem;
-        padding-bottom: calc(100vh - 49rem);
-        height: max(calc(100vh - 10rem), 35rem);
-        position: relative;
-        z-index: 5;
-        h1 {
-            font-size: 5rem;
-            width: 100%;
-            font-weight: 600;
-            height: 7rem;
-            margin-bottom: 0;
-        }
-        h3 {
-            font-family: $heading-font, serif;
-            font-style: italic;
-            padding-top: 3rem;
-            font-weight: 300;
-            height: 10rem;
-            margin-bottom: 0;
-        }
-    }
+	.hero {
+		color: $white;
+		padding-top: 10rem;
+		padding-right: 5rem;
+		padding-left: 5rem;
+		padding-bottom: calc(100vh - 47rem);
+		height: max(calc(100vh - 8rem), 37rem);
+		position: relative;
+		z-index: 5;
+		h1 {
+			font-size: 5rem;
+			width: 100%;
+			font-weight: 600;
+			height: 7rem;
+			margin-bottom: 0;
+		}
+		h3 {
+			font-family: $heading-font, serif;
+			font-style: italic;
+			padding-top: 3rem;
+			font-weight: 300;
+			height: 10rem;
+			margin-bottom: 0;
+		}
+	}
 
-    .introComp {
-        background-color: $white;
-        color: $teal;
-        h1 {
-            letter-spacing: normal !important;
-            width: 100%;
-        }
-    }
+	.introComp {
+		background-color: $white;
+		color: $teal;
+		h1 {
+			letter-spacing: normal !important;
+			width: 100%;
+		}
+	}
 
-    .stats {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: $heading-font, serif;
-        background-color: $teal;
-        color: $white;
-        padding: 5rem 0;
-        .stat {
-            font-size: 7rem;
-            flex-direction: column;
-            p {
-                font-size: 2rem;
-            }
-        }
-    }
+	.stats {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		gap: 10rem;
+		font-family: $heading-font, serif;
+		background-color: $teal;
+		color: $white;
+		padding: 3rem 0;
+		.stat {
+			font-size: 6rem;
+			flex-direction: column;
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
 
-    .baselinediv {
-        text-align: center;
-        .baseline {
-            margin: 4rem 0;
-        }
-    }
+	.team {
+		width: 100%;
+		align-items: center;
+		text-align: center;
+		h1 {
+			font-family: $heading-font, serif;
+			font-weight: 600;
+			padding: 3rem 0;
+			width: 100%;
+			margin: 0;
+			color: $teal;
+		}
+		img {
+			width: 75%;
+		}
+	}
 
-    .services {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+	.baselinediv {
+		text-align: center;
+		.baseline {
+			margin: 3rem 0;
+		}
+	}
 
-        h1 {
-            padding: 3rem 0;
-            font-family: $heading-font, serif;
-            font-weight: 600;
-            width: 100%;
-            color: $teal;
-        }
+	@media screen and (max-width: 768px) {
+		position: relative;
+		z-index: 0;
+		.hero {
+			padding-top: calc(6vh + 2.5rem);
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+			padding-bottom: calc(92vh - 43rem);
+			h1 {
+				font-size: 3.5rem;
+				width: 100%;
+				height: 8.5rem;
+			}
+		}
+		.team {
+			margin-bottom: 4rem;
+		}
+		.stats {
+			flex-direction: column;
+			gap: 2rem;
+			.stat {
+				transform: scale(0.8);
+			}
+		}
 
-        .carousel {
-            width: 85%;
-            background-color: $light-teal;
-            color: $white;
-            height: 35rem;
-
-            border-radius: 1rem;
-            box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-        }
-    }
-    @media screen and (max-width: 768px) {
-        position: relative;
-        z-index: 0;
-        .hero {
-            padding-top: calc(6vh + 2.5rem);
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-            padding-bottom: calc(92vh - 43rem);
-            h1 {
-                font-size: 3.5rem;
-                width: 100%;
-                height: 8.5rem;
-            }
-        }
-        .stats {
-            flex-direction: column;
-            .stat {
-                transform: scale(0.8);
-            }
-        }
-
-        .services > .carousel {
-            height: 27rem;
-        }
-
-        .carousel-control-next {
-            padding-left: 1.8rem;
-        }
-
-        .carousel-control-prev {
-            padding-right: 1.8rem;
-        }
-
-        .carousel-control-next,
-        .carousel-control-prev {
-            transform: scale(0.9);
-        }
-
-        .baselinediv > .baseline {
-            height: 0px;
-            margin: 2rem 0;
-        }
-
-        .carousel-inner {
-            margin-top: 1rem;
-        }
-    }
+		.baselinediv > .baseline {
+			height: 0px;
+			margin: 2rem 0;
+		}
+	}
 }

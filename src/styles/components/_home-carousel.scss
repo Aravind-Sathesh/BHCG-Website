@@ -1,57 +1,48 @@
 .carousel-card {
-    padding: 5rem 10rem;
-    text-align: left;
+	padding: 5rem 10rem 0rem 10rem;
+	text-align: left;
 
-    ul {
-        margin-top: 2rem;
-    }
-    .li {
-        font-family: $body-font, sans-serif;
-        font-size: 2rem;
-    }
+	ul {
+		margin-top: 2rem;
+	}
+	.li {
+		font-family: $body-font, sans-serif;
+		font-size: 1.7rem;
+	}
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        h2 {
-            width: 70%;
-            font-family: $heading-font, serif;
-            font-size: 4rem;
-        }
-        img {
-            width: 8rem;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            border-radius: 0.5rem;
-        }
-    }
+	.header {
+		display: flex;
+		justify-content: space-between;
+		h2 {
+			width: 70%;
+			font-family: $heading-font, serif;
+			font-size: 3rem;
+		}
+		img {
+			width: 8rem;
+			aspect-ratio: 1/1;
+			object-fit: cover;
+			border-radius: 0.5rem;
+		}
+	}
 
-    @media screen and (max-width: 1500px) {
-        .header > h2 {
-            font-size: 3rem;
-        }
-        .li {
-            font-size: 1.7rem;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        padding: 1rem;
-        .header > h2 {
-            width: 70%;
-            font-family: $heading-font, serif;
-            font-size: 1.5rem;
-        }
-        .header > img {
-            width: 4rem;
-            height: 4rem;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            border-radius: 0.5rem;
-        }
-        > .list > .li {
-            font-family: $body-font, sans-serif;
-            font-size: 1.25rem !important;
-        }
-    }
+	@media screen and (max-width: 768px) {
+		padding: 1rem;
+		.header > h2 {
+			width: 70%;
+			font-family: $heading-font, serif;
+			font-size: 1.5rem;
+		}
+		.header > img {
+			width: 4rem;
+			height: 4rem;
+			aspect-ratio: 1/1;
+			object-fit: cover;
+			border-radius: 0.5rem;
+		}
+		> .list > .li {
+			font-family: $body-font, sans-serif;
+			font-size: 1.25rem !important;
+		}
+	}
 }

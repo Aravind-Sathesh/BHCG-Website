@@ -1,95 +1,105 @@
 .FOOTER {
-    background-color: $teal;
-    color: $white;
-    font-family: $body-font, sans-serif;
-    font-size: 1.1rem;
+	background-color: $teal;
+	color: $white;
+	font-family: $body-font, sans-serif;
+	font-size: 0.9rem;
+	width: 100%;
 
-    .flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	.flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-    .flex-col {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+		img {
+			scale: 0.9;
+		}
+	}
 
-    .footer-logo {
-        width: 250px;
-    }
+	.flex-col {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 
-    .lastdiv {
-        background-color: $teal;
-        justify-content: space-between;
-        padding: 0.5rem 4rem;
-    }
+	.footer-logo {
+		width: 200px;
+	}
 
-    .navigations {
-        gap: 2rem;
-    }
+	.lastdiv {
+		background-color: $teal;
+		justify-content: space-between;
+		padding: 0.5rem 4rem;
+	}
 
-    .icons {
-        gap: 2rem;
-        img {
-            width: 3.5rem;
-        }
-    }
+	.navigations {
+		gap: 2rem;
+	}
 
-    .contacts {
-        color: $white;
-        align-items: start;
-        gap: 1rem;
-    }
+	.icons {
+		gap: 2rem;
+		img {
+			width: 3rem;
+		}
+	}
 
-    .contacts p {
-        gap: 1rem;
-    }
+	.divider {
+		width: 0.075rem;
+		height: 12rem;
+	}
 
-    p.flex {
-        margin: 0.25rem;
-    }
+	.contacts {
+		color: $white;
+		align-items: start;
+		gap: 0.8rem;
+	}
 
-    .end {
-        background: $light-teal;
-        color: $white;
-        padding: 0.25rem;
-    }
+	.contacts p {
+		gap: 1rem;
+	}
 
-    .footerLink {
-        color: $white;
-        text-decoration: none;
-    }
+	p.flex {
+		margin: 0.25rem;
+	}
 
-    @media screen and (max-width: 768px) {
-        .lastdiv {
-            flex-direction: column-reverse;
-            padding: 1.5rem;
-            .icons {
-                transform: scale(0.75);
-            }
-            .navigations {
-                gap: 0;
-                flex-direction: column-reverse;
-                img {
-                    width: 15rem;
-                    margin: 1rem;
-                    height: 1px;
-                    opacity: 0.5;
-                }
-                .footer-logo {
-                    display: none;
-                }
-            }
-            .contacts {
-                align-items: center;
-                gap: 0.5rem;
-                img {
-                    display: none;
-                }
-            }
-        }
-    }
+	.end {
+		background: $light-teal;
+		color: $white;
+		padding: 0.25rem;
+	}
+
+	.footerLink {
+		color: $white;
+		text-decoration: none;
+	}
+
+	@media screen and (max-width: 768px) {
+		.lastdiv {
+			flex-direction: column-reverse;
+			padding: 1.5rem;
+			.icons {
+				transform: scale(0.75);
+			}
+			.navigations {
+				gap: 0;
+				flex-direction: column-reverse;
+				img {
+					width: 15rem;
+					margin: 1rem;
+					height: 1px;
+					opacity: 0.5;
+				}
+				.footer-logo {
+					display: none;
+				}
+			}
+			.contacts {
+				align-items: center;
+				gap: 0.5rem;
+				img {
+					display: none;
+				}
+			}
+		}
+	}
 }

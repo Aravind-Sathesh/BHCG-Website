@@ -1,188 +1,262 @@
 .HEADER {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    height: 10rem;
-    box-sizing: border-box;
-    font-family: $body-font, sans-serif;
-    font-size: 1.1rem;
-    position: sticky;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	height: 8rem;
+	box-sizing: border-box;
+	font-family: $body-font, sans-serif;
+	font-size: 1.1rem;
+	position: sticky;
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 0 0.5rem;
-        box-sizing: border-box;
-    }
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 0 0.5rem;
+		box-sizing: border-box;
+	}
 
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-            height: 10rem;
-        }
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			height: 8rem;
+		}
 
-        .bits-logo {
-            padding: 1.5rem;
-        }
-    }
+		.bits-logo {
+			padding: 1.5rem;
+		}
+	}
 
-    .nav-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 5rem;
-        border-radius: 30px;
-        box-sizing: border-box;
-        @media screen and (max-width: 768px) {
-            width: auto;
-        }
+	.nav-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 5rem;
+		border-radius: 30px;
+		box-sizing: border-box;
+		@media screen and (max-width: 768px) {
+			width: auto;
+		}
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 100%;
-            padding-inline-start: 0;
-            z-index: 10;
+		.nav-links {
+			list-style: none;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			width: 100%;
+			padding-inline-start: 0;
+			z-index: 10;
+			li {
+				margin: 0 10px;
+			}
 
-            li {
-                margin: 0 10px;
-            }
+			a {
+				font-weight: 700;
+				text-decoration: none;
+				font-size: 1em;
+				padding: 0.5rem 0.75rem;
 
-            a {
-                font-weight: 700;
-                text-decoration: none;
-                font-size: 1em;
-                padding: 0.75rem 0.75rem;
+				&:hover {
+					border-radius: 25px;
+				}
+			}
 
-                &:hover {
-                    border-radius: 25px;
-                }
-            }
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+				position: absolute;
+				top: 8rem;
+				left: 0;
+				width: 100%;
+				background-color: $teal;
+				transition: max-height 0.3s ease-in-out;
+				overflow: hidden;
+				max-height: 0;
 
-            @media screen and (max-width: 768px) {
-                flex-direction: column;
-                position: absolute;
-                top: 10rem;
-                left: 0;
-                width: 100%;
-                background-color: $teal;
-                transition: max-height 0.3s ease-in-out;
-                overflow: hidden;
-                max-height: 0;
+				&.open {
+					max-height: 35rem;
+				}
 
-                &.open {
-                    max-height: 30rem;
-                }
+				li {
+					width: 100%;
+					text-align: center;
+					margin: 0;
+					padding: 1rem 0;
+				}
 
-                li {
-                    width: 100%;
-                    text-align: center;
-                    margin: 0;
-                    padding: 1rem 0;
-                }
+				a {
+					padding: 1rem 0;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
 
-                a {
-                    padding: 1rem 0;
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
+	.hamburger {
+		display: none;
+		cursor: pointer;
+		padding: 1rem;
 
-    .hamburger {
-        display: none;
-        cursor: pointer;
-        padding: 1rem;
+		@media screen and (max-width: 768px) {
+			display: block;
+		}
 
-        @media screen and (max-width: 768px) {
-            display: block;
-        }
+		.line {
+			display: block;
+			width: 25px;
+			height: 3px;
+			background-color: $white;
+			margin: 4px 0;
+			transition: all 0.3s ease;
+		}
+	}
 
-        .line {
-            display: block;
-            width: 25px;
-            height: 3px;
-            background-color: $white;
-            margin: 4px 0;
-            transition: all 0.3s ease;
-        }
-    }
+	&.light {
+		background-color: $white;
 
-    &.light {
-        background-color: $white;
+		.nav-container {
+			color: $teal;
+			background-color: $white;
+		}
 
-        .nav-container {
-            color: $teal;
-            background-color: $white;
-        }
+		.nav-links {
+			background-color: $white;
+			a {
+				color: $teal;
 
-        .nav-links {
-            background-color: $white;
-            a {
-                color: $teal;
+				&:hover {
+					color: $white;
+					background-color: $teal;
+					transition: background-color 0.5s;
+				}
+			}
+		}
 
-                &:hover {
-                    color: $white;
-                    background-color: $teal;
-                    transition: background-color 0.5s;
-                }
-            }
-        }
+		.hamburger .line {
+			background-color: $teal;
+		}
 
-        .hamburger .line {
-            background-color: $teal;
-        }
-    }
+		.teams-dropdown .dropdown {
+			background-color: $white;
+		}
+	}
 
-    &.colour {
-        background-color: $transparent-teal;
-        transition: 0.5s;
+	&.colour {
+		background-color: $transparent-teal;
+		transition: 0.5s;
 
-        &.true {
-            background-color: $light-teal;
-            transition: 0.5s;
-        }
+		&.projects {
+			background-color: $light-teal;
+		}
 
-        .nav-container {
-            color: #fff;
-        }
+		&.true {
+			background-color: $light-teal;
+			transition: 0.5s;
+		}
 
-        .nav-links {
-            a {
-                color: #fff;
+		.nav-container {
+			color: #fff;
+		}
 
-                &:hover {
-                    color: $teal;
-                    background-color: #fff;
-                    transition: background-color 0.5s;
-                }
-            }
-        }
+		.nav-links {
+			a {
+				color: #fff;
 
-        .hamburger .line {
-            background-color: #fff;
-        }
-    }
+				&:hover {
+					color: $teal;
+					background-color: #fff;
+					transition: background-color 0.5s;
+				}
+			}
+		}
 
-    &.true {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: 0.5s;
-    }
+		.teams-dropdown .dropdown {
+			background-color: $teal;
+		}
+
+		.hamburger .line {
+			background-color: #fff;
+		}
+	}
+
+	&.true {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		transition: 0.5s;
+	}
+}
+
+.teams-dropdown {
+	position: relative;
+}
+
+.teams-dropdown .dropdown {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.teams-dropdown:hover .dropdown {
+	display: block;
+}
+
+.teams-dropdown .dropdown li {
+	width: 100%;
+	text-align: center;
+}
+
+.teams-dropdown .dropdown a {
+	display: block;
+	color: $white;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.nav-links .dropdown {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0.5rem 1.25rem 0.5rem 0;
+	margin-left: -3.1rem;
+}
+
+.dropdown-item {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 1.5rem 0.5rem;
+}
+
+.teams-label {
+	cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-    .HEADER {
-        .logo {
-            transform: scale(0.6);
-            margin-left: -3.5rem;
-        }
-    }
+	.HEADER {
+		.logo {
+			transform: scale(0.6);
+			margin-left: -3.5rem;
+		}
+	}
+
+	.teams-dropdown .dropdown {
+		display: block;
+		position: static;
+		box-shadow: none;
+	}
+
+	.nav-links.open .dropdown {
+		display: flex;
+		flex-direction: column;
+	}
 }

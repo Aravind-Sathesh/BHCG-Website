@@ -1,0 +1,66 @@
+[
+	{
+		"id": "1",
+		"title": "'Founder Mode': The Business World's Panacea?",
+		"image": "/blog-covers/blog-1.png",
+		"tags": ["Entrepreneurship", "Leadership"],
+		"date": "2024-11-04",
+		"author": "Atharva Mishra",
+		"content": [
+			"Mr. Graham had written an essay highlighting the superiority of 'Founder Mode' over 'Manager Mode'. Let us first try to decipher such nebulous terminology.",
+			"Founder Mode - this word has become the talk of the town, since its inception in September by Paul Graham, Co-founder, Y-combinator. This term has been mooted about by the sundry pooh-bahs of the entrepreneurial and corporate worlds.",
+			"Founder Mode can be interpreted as an unorthodox management style, where the CEO has a more hands-on and domineering approach towards the decision-making and execution of plans. Mr. Graham claims that companies with such flat organizational structures, and where CEOs routinely involve in 'Skip-Level Meetings' show better results. Apple's Co-founder, Steve Jobs, and Airbnb Co-founder Brian Chesky are given as examples of the success of this model.",
+			"He also expresses his disdain for text-books like 'Manager Mode' which revolves around the delegation of work in a tall organizational structure, summarized by the hackneyed maxim preached to young founders - 'hire good people and give them room to do their jobs.' He chides organizations for having too many unscrupulous emissaries, echoing the dictum 'too many cooks spoil the broth.' Simply put, he advises CEOs to lead like founders and not managers.",
+			"Several start-up moguls including Tobias Lütke, CEO and Co-founder, of Shopify have vociferously supported Mr. Graham's blog. They argue that there are certain things that only founders can do, and managers may find themselves inept.",
+			"Dan Rose, who held leadership positions at Amazon and Meta, wrote that Jeff Bezos and Mark Zuckerberg “were both micro-managers, deep in the details of the product and business. They never set expectations of autonomy, and they fired anyone who resisted their oversight.” It seems that such 'Founder Mode' idiosyncratic behavior is common amongst successful entrepreneurs.",
+			"Founders are the biological parents of the organization and share a personal connection with it. On the contrary, managers have less moral authority to drive change and are considered more disposable. In the end, it is just a job for them. Hence it seems axiomatic to allow the founders-CEOs to be involved in every nitty-gritty of business, as they are the de facto omniscient and omnipotent numero uno of the company.",
+			"An example that can be adduced to support 'Founder Mode' is Steve Jobs's intervention in the Macintosh team. His expertise in calligraphy led to the addition of beautiful typography on the computer. This further evolved into the plethora of font options available today, in every computer system. I can list ad nauseam about how the founder's God-like interventions, heroics, and prudence saved their companies from certain doom. Handful founders like Steve Jobs, have had their names permanently etched in the hall of fame and command respect at the highest echelon.",
+			"However, there are certain fallacies in the 'Founder Mode'. Not every founder is as ingenious as Steve Jobs or Elon Musk. Not every founder has that temperament or finesse. Not every business may thrive in such conditions. Commensurate to every success story, there are probably thousands of failed enthusiasts.",
+			"The best example is that of Rahul Yadav, Founder, and ex-CEO, Housing.com. The prodigal IIT-Bombay dropout had launched Housing.com in 2012, and just two years later, it was valued at over Rs 1,500 Crore. However, the capricious nature of the founder, and his public contretemps with board members and investors, led to his downfall. In hindsight, he may have become the next big thing, if he had the proper guidance. Adam Neuman, co-founder, and ex-CEO, of WeWork, and Elizabeth Holmes, co-founder, and ex-CEO shared a similar fate due to their erratic, eccentric and narcissistic behavior and had to face enormous ignominy.",
+			"One can see a direct link between 'Founder Mode' and Franz Kafka's story 'Poseidon'. The story revolves around Poseidon, the God of the sea, and amongst the three most powerful Greek Gods. According to Kafka's chronicle, Poseidon is so caught up with the paperwork vis-a-vis his territory, that he does not even have time to explore his oceans. He could delegate the menial work to his adjutants, but he does not trust them. Instead, he sits at the bottom of the ocean and chooses to do all the grunt work by himself. Hence he is reduced from the papacy to a clerk.",
+			"Henrik Torstensson, a venture capitalist, states that some creators aren't great at executing. 'When a startup has reached sufficient scale, a great executing manager likely does better than a bad to medium executing founder,' he concluded. This also resonates with the conventional approach to scaling up businesses. He also cited the example of Satya Nadella- the apotheosis of 'Manager Mode'.",
+			"The author has also received major flak online. People have derided him for merely giving 'micromanaging' a more acceptable, sesquipedalian term. Judd Antin, an executive coach, writes in his blog that this new word has been created for founders to expiate their failure to adapt and delegate as their business grows and their penchant for sticking to flawed managerial practices.",
+			"It is exhorted by most experts not to look at management in such a bipartisan fashion. While 'Founder mode' brings swiftness and ingenuity, 'Manager mode' promotes stability. Both 'modes' seem to be on par with each other and companies should strive for a via media between them. It's worth noting that in his second stint at Apple, Steve Jobs had Tim Cook by his side, the Google founders were affiliated with Eric Schmidt, and Gwynne Shotwell is associated with Elon's SpaceX. The co-existence of both these modes, in the right amount, is the secret sauce to build and maintain successful organizations."
+		],
+		"references": [
+			"https://paulgraham.com/foundermode.html",
+			"https://torstensson.com/2024/09/02/founder-mode-take-2-or-life-is-always-more-complex/",
+			"https://wsj.com/tech/with-founder-mode-silicon-valley-makes-micromanaging-cool-7a6c34ad",
+			"https://economictimes.indiatimes.com/news/company/corporate-trends/is-rahul-yadav-the-sacked-founder-of-housing-com-still-cruising-for-a-bruising/articleshow/100728036.cms?from=mdr",
+			"https://medium.com/onebigthought/the-problem-with-founders-4faba63d3f5f",
+			"https://fortune.com/2024/09/08/founder-mode-vs-manager-mode-meaning-paul-graham-essay/",
+			"https://entrepreneur.com/business-news/what-is-founder-mode-and-why-is-it-better-than-manager-mode/479465",
+			"https://nytimes.com/2024/09/03/business/dealbook/founder-mode-chesky-graham.html"
+		]
+	},
+	{
+		"id": "2",
+		"title": "Faineant Employees vs Avaricious Managers",
+		"image": "/blog-covers/blog-2.png",
+		"tags": ["Work Culture", "Corporate Ethics"],
+		"date": "2024-11-05",
+		"author": "Atharva Mishra",
+		"content": [
+			"No one on his deathbed ever said 'I wish I had spent more time on my business' - Paul Tsongas, US Politician",
+			"The tragic demise of the 26-year-old EY employee has sparked a widespread debate on the toxic work culture foisted by sundry MNCs operating in India.",
+			"Anna Sebastian Perayil, a neophyte at Ernst & Young, succumbed to cardiac arrest in July this year. Her parents insinuated that work pressure at EY played a preponderant role in the untimely death of their daughter. They have also lambasted the company for its inhumane work culture and its glorification of overwork.",
+			"Aristotle, the acclaimed Greek philosopher, asserted that work is an essential part of one's life and that it is a means to an end. He also believed that leisure is equally important as it gives one time to reflect and explore. In his book 'Nicomachean Ethics,' he states that a person needs to counterpoise work and leisure, to attain 'eudaimonia,' or 'happiness'.",
+			"In France, there is a concept of 'Faire le Pont' or 'to bridge.' If there is a holiday on Tuesday or Thursday, the day in between (i.e., Monday or Friday) is considered a paid leave. Hence they are often given 4-day weekends to get away from the hustle and bustle of work life. The average Indian worker clocks 46.7 hours each week, in contrast to Germany's 34.2 hours per week. Most western nations' labor laws emphasize the importance of health, safety, and well-being of workers. Hence products or services crafted by these countries have very high-quality standards and are renowned for their ingenuity and originality.",
+			"In contrast, Asian countries like Japan suffer from the problem of being overworked. Karoshi, or 'Overwork death,' is something that the Japanese Government is trying to battle. China too, is infamous for neglecting the abhorrent working conditions of its people. Nonetheless, these countries have achieved astronomical growth in their economies, through the sweat and toil of their inhabitants.",
+			"Before 1991, the Indian government focused on constructing a closed socialist economy, where the state controlled most of the heavy, technology-intensive industries. The Government did not care about making profits, and the employees could not be fired for not doing work. These institutions were also bridled by labor unions. This created an army of desultory workers. The growth of the private sector was encumbered by the absurd License Raj. It is evident that since the 1991 Liberalization of India's economy, the work culture has taken a paradigm shift.",
+			"The internet revolution has further opened up new industries. The sleeping elephant has woken up from a lull ever since. The free market has led to a rise in competition. To compete in the market, companies have to maximize their efficiency. This means employing a minimal number of employees to complete a task. However, the line between efficiency and exploitation is a tenuous one.",
+			"Last year, Narayan Murthy, Co-founder of Infosys, exhorted that the Indian youth should be prepared to work for 70 hours a week, for the welfare of the Indian society. Other nabobs from the tech industry, like Bhavish Aggarwal, CEO & Co-founder of OLA, echoed a similar sentiment. According to the Factories Act 1948, workers should be paid double the regular rate for any work beyond the standard 48 hours per week. The question that inexorably arises is - Are companies ready to compensate their employees for their overtime and extra efforts?",
+			"It is also to be noted that India has laws like the Factories Act 1948 and the Shops and Establishments Act to protect workers from exploitation; however, they are regularly flouted by rapacious managers. They are not perturbed by their exploitative tactics, as they see employees as easily replaceable gunk, and often seek to hire candidates who can acquiesce to their impossible deadlines and inhumane work conditions. Therefore, more than 51% of India's workforce logs more than 49 hours weekly.",
+			"For improving the lives of employees, strong labor unions can be established, but they have a history of marring companies with inefficiency. However, exponential growth in the economy bolstered by efficient companies is of no use if it takes a toll on the mental health of its people.",
+			"Therefore, a healthy Modus Vivendi should be reached between employees and companies. The Government should take measures so that workers can lead a reasonable work-life balance, without reimplementing the draconian statism policies. Schools and colleges' curricula should emphasize important skills like teamwork and how to treat subordinates or superiors. The Indian corporate should jettison its toxic traits to make way for a more humane and conducive work environment, which inevitably increases efficiency."
+		],
+		"references": [
+			"https://www.brainyquote.com/quotes/paul_tsongas_400835",
+			"https://www.bbc.com/news/articles/c0kjgp4jr5yo",
+			"https://en.wikipedia.org/wiki/Karoshi",
+			"https://economictimes.indiatimes.com/magazines/panache/narayan-murthy-defends-70-hr-a-week-work-policy-says-employees-should-emulate-less-fortunate-who-work-extremely-hard/articleshow/106577444.cms?from=mdr",
+			"https://www.thoughtco.com/french-expression-faire-le-pont-1371485",
+			"https://www.business-standard.com/amp/india-news/india-among-top-overworked-nations-51-employees-work-49-hours-a-week-124092000495_1.html"
+		]
+	}
+]
