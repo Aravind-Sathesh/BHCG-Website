@@ -72,7 +72,21 @@ const EventCard = ({ title, date, description, location, time }) => {
 								fontStyle: 'italic',
 							}}
 						>
-							{time}
+							{time.startsWith('http') ? (
+								<a
+									href={time}
+									target='_blank'
+									rel='noopener noreferrer'
+									style={{
+										color: '#027f7b',
+										textDecoration: 'underline',
+									}}
+								>
+									{time}
+								</a>
+							) : (
+								time
+							)}
 						</Typography>
 						<Typography
 							variant='body2'
