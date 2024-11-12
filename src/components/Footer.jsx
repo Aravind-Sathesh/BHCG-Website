@@ -101,18 +101,33 @@ const Footer = ({ footerRef }) => {
 				<Tooltip
 					title={
 						<div style={{ textAlign: 'center' }}>
-							<Typography variant='body2'>
-								Aakrit Jain, Aravind Sathesh
+							<Typography
+								variant='subtitle2'
+								component='div'
+								align='center'
+							>
+								<strong>Designed and Developed by BHCG</strong>
+							</Typography>
+							<Typography
+								variant='body2'
+								component='div'
+								align='center'
+							>
+								Aravind Sathesh
 								<br />
-								Atiksh Gupta, Rithvik Vallivedu
+								Rithvik Vallivedu
 								<br />
-								Vedika Kothawade, Anushka Bhatt
+								Atiksh Gupta
+								<br />
+								Aakrit Jain
+								<br />
+								Vedika Kothawade
 							</Typography>
 						</div>
 					}
 					placement='top'
 				>
-					<span>{`© BHCG ${year} | CREDITS`}</span>
+					<span>{`© BHCG ${year}`}</span>
 				</Tooltip>
 			</div>
 		</footer>
