@@ -38,5 +38,13 @@
 		"description": "Join the Inter BITS Case Competition - Insight Odyssey, an inter-campus consulting showdown. Tackle real-world business challenges, compete, strategize, and showcase your insights. Stand a chance to win a cash prize of ₹30,000. Registration deadline: 5 PM, 16th November.",
 		"location": "Online",
 		"time": "https://bit.ly/interbits-casecomp?r=qr"
+	},
+	{
+		"id": 6,
+		"title": "PROD-EEZY 3.0",
+		"date": "16/11/2024",
+		"description": "Join the Product Management Cohort 'PROD-EEZY 3.0', organized by BGCC and BHCG. This exclusive program is 100% free, tailored for BITSians graduating in 2025 and 2026. Secure your spot quickly as seats are limited!",
+		"location": "BITS Pilani, Hyderabad Campus",
+		"time": "https://forms.gle/hzWv4n8y7xY9toAR7"
 	}
 ]
