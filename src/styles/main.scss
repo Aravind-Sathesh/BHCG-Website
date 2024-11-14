@@ -23,13 +23,13 @@
 	}
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1024px) and (max-width: 1600px) {
 	body {
 		zoom: 0.9;
 	}
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1024px) and (max-width: 1300px) {
 	body {
 		zoom: 0.85;
 	}
