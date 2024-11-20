@@ -1,179 +1,174 @@
 .TEAM_POR {
-    width: 60%;
-    padding: 5rem 0 5rem 0;
+	width: 60%;
+	padding: 5rem 0 5rem 0;
 
-    h1 {
-        font-size: 2.5rem;
-        margin: 1rem 0 0 0;
-        font-weight: 500;
-        padding: 1rem 0;
-        width: 100%;
-    }
+	h1 {
+		font-size: 2.5rem;
+		margin: 1rem 0 0 0;
+		font-weight: 500;
+		padding: 1rem 0;
+		width: 100%;
+	}
 
-    h2 {
-        gap: 0.5rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        padding: 0.5rem 0;
-    }
+	h2 {
+		gap: 0.5rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		padding: 0.5rem 0;
+	}
 
-    p {
-        text-align: justify;
-    }
+	p {
+		text-align: justify;
+	}
 
-    .gp-left-text,
-    .gp-left-heading {
-        padding: 1rem 5rem 1rem 10rem;
-        align-items: flex-start;
-        text-align: left;
-    }
+	.gp-left-text,
+	.gp-left-heading {
+		padding: 1rem 5rem 1rem 10rem;
+		align-items: flex-start;
+		text-align: left;
+	}
 
-    .gp-left-heading {
-        color: $teal;
-        text-transform: uppercase;
-        font-family: $heading-font, serif;
-        display: flex;
-        flex-direction: column;
-        img {
-            width: 2rem;
-            margin-top: -0.25rem;
-        }
-    }
+	.gp-left-heading {
+		color: $teal;
+		text-transform: uppercase;
+		font-family: $heading-font, serif;
+		display: flex;
+		flex-direction: column;
+		img {
+			width: 2rem;
+			margin-top: -0.25rem;
+		}
+	}
 
-    .gp-left-text {
-        background: $teal;
-        color: $white;
-        font-family: $body-font, sans-serif;
-        font-size: 1.25rem;
-        position: relative;
-        padding-right: 2.5rem;
-        box-shadow: 1rem 1rem 0rem 0rem #c0c0c0;
-        p {
-            padding: 1rem;
-        }
-    }
+	.gp-left-text {
+		background: $teal;
+		color: $white;
+		font-family: $body-font, sans-serif;
+		font-size: 1.25rem;
+		position: relative;
+		padding-right: 2.5rem;
+		box-shadow: 1rem 1rem 0rem 0rem #c0c0c0;
+		p {
+			padding: 1rem;
+		}
+	}
 
-    .gp-left-picture {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(-50%, -50%);
-        padding: 1rem;
-        padding-bottom: 0.75rem;
-        background: #d9d9d9;
-    }
+	.gp-left-picture {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translate(-50%, -50%);
+		padding: 1rem;
+		padding-bottom: 0.75rem;
+		background: #d9d9d9;
+	}
 
-    .photo {
-        width: 15rem;
-        height: 18rem;
-        object-fit: cover;
-    }
+	.photo {
+		width: 15rem;
+		height: 18rem;
+		object-fit: cover;
+	}
 
-    .gp-right-heading {
-        color: $teal;
-        text-transform: uppercase;
-        font-family: $heading-font, serif;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 1rem 10rem 1rem 5rem;
-        text-align: right;
-        img {
-            width: 2rem;
-            margin-top: -0.25rem;
-        }
-    }
+	.gp-right-heading {
+		color: $teal;
+		text-transform: uppercase;
+		font-family: $heading-font, serif;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding: 1rem 10rem 1rem 5rem;
+		text-align: right;
+		img {
+			width: 2rem;
+			margin-top: -0.25rem;
+		}
+	}
 
-    .gp-right-text {
-        background: $teal;
-        color: $white;
-        font-size: 1.25rem;
-        font-family: $body-font, sans-serif;
-        position: relative;
-        padding: 1rem;
-        box-shadow: -1rem 1rem 0rem 0rem #c0c0c0;
-        p {
-            width: 87%;
-            padding: 1rem;
-        }
-    }
+	.gp-right-text {
+		background: $teal;
+		color: $white;
+		font-size: 1.25rem;
+		font-family: $body-font, sans-serif;
+		position: relative;
+		padding: 1rem;
+		box-shadow: -1rem 1rem 0rem 0rem #c0c0c0;
+		p {
+			width: 87%;
+			padding: 1rem;
+		}
+	}
 
-    .gp-right-picture {
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: translate(50%, -50%);
-        padding: 1rem;
-        padding-bottom: 0.75rem;
-        background: #d9d9d9;
-    }
+	.gp-right-picture {
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translate(50%, -50%);
+		padding: 1rem;
+		padding-bottom: 0.75rem;
+		background: #d9d9d9;
+	}
 
-    @media screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        padding: 0;
-        padding-bottom: 2rem;
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		padding: 0;
+		padding-bottom: 2rem;
 
-        .team-heading > img {
-            width: 90%;
-        }
+		.team-heading > img {
+			width: 90%;
+		}
 
-        .team-photo > img {
-            width: 90%;
-            padding: 1rem 0;
-        }
+		> h1 {
+			width: 100%;
+			font-size: calc(1.375rem + 1.5vw);
+		}
 
-        > h1 {
-            width: 100%;
-            font-size: calc(1.375rem + 1.5vw);
-        }
+		.gp-left-heading,
+		.gp-right-heading {
+			align-items: center;
+			padding: 1rem;
+			padding-top: 0;
+			text-align: center;
+			h1 {
+				font-size: 1.5rem;
+				padding: 0;
+				width: 100%;
+			}
+			h2 {
+				align-items: center;
+				font-size: 1rem;
+			}
+			img {
+				width: 1.5rem;
+			}
+		}
 
-        .gp-left-heading,
-        .gp-right-heading {
-            align-items: center;
-            padding: 1rem;
-            padding-top: 0;
-            text-align: center;
-            h1 {
-                font-size: 1.5rem;
-                padding: 0;
-                width: 100%;
-            }
-            h2 {
-                align-items: center;
-                font-size: 1rem;
-            }
-            img {
-                width: 1.5rem;
-            }
-        }
+		.gp-left-text,
+		.gp-right-text {
+			padding: 1rem;
+			font-size: 0.75rem;
+			line-height: 1.75rem;
+			box-shadow: 0 0 0 0.5rem #c0c0c0;
+			p {
+				width: 100%;
+			}
+		}
 
-        .gp-left-text,
-        .gp-right-text {
-            padding: 1rem;
-            font-size: 0.75rem;
-            line-height: 1.75rem;
-            box-shadow: 0 0 0 0.5rem #c0c0c0;
-            p {
-                width: 100%;
-            }
-        }
-
-        .gp-left-picture,
-        .gp-right-picture {
-            position: relative;
-            background: none;
-            text-align: center;
-            transform: none;
-            .photo {
-                border: #d9d9d9;
-                border-style: solid;
-                border-width: 0.5rem;
-            }
-        }
-    }
+		.gp-left-picture,
+		.gp-right-picture {
+			position: relative;
+			background: none;
+			text-align: center;
+			transform: none;
+			.photo {
+				border: #d9d9d9;
+				border-style: solid;
+				border-width: 0.5rem;
+			}
+		}
+	}
 }

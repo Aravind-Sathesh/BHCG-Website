@@ -46,6 +46,10 @@
 			font-size: 1.25rem;
 			font-weight: 600;
 			padding-bottom: 3rem;
+			img {
+				max-width: 50%;
+				max-height: 6rem;
+			}
 		}
 		p {
 			padding-left: 1.5rem;
@@ -78,48 +82,71 @@
 		top: 3%;
 	}
 	.gp2 {
-		top: 15%;
+		top: 12%;
 	}
 	#dt2 {
-		top: 15%;
+		top: 12%;
 	}
 	.gp3 {
-		top: 27%;
+		top: 21%;
 	}
 	#dt3 {
-		top: 27%;
+		top: 21%;
 	}
 	.gp4 {
-		top: 39%;
+		top: 30%;
 	}
 	#dt4 {
-		top: 39%;
+		top: 30%;
 	}
 	.gp5 {
-		top: 51%;
+		top: 39%;
 	}
 	#dt5 {
-		top: 51%;
+		top: 39%;
 	}
 	.gp6 {
-		top: 63%;
+		top: 48%;
 	}
 	#dt6 {
-		top: 63%;
+		top: 48%;
 	}
 	.gp7 {
-		top: 75%;
+		top: 57%;
 	}
 	#dt7 {
-		top: 75%;
+		top: 57%;
 	}
 	.gp8 {
-		top: 87%;
+		top: 66%;
 	}
 	#dt8 {
+		top: 66%;
+	}
+	.gp9 {
+		top: 75%;
+		img {
+			margin: 1.5rem;
+			padding: 0.1rem;
+			border-radius: 0.25rem;
+			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+		}
+	}
+	#dt9 {
+		top: 75%;
+	}
+	.gp10 {
+		top: 87%;
+		img {
+			margin: 1.5rem;
+			padding: 0.5rem;
+			border-radius: 0.25rem;
+			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+		}
+	}
+	#dt10 {
 		top: 87%;
 	}
-
 	.time {
 		color: $white;
 		font-size: 1.25rem;
@@ -136,7 +163,7 @@
 		margin-top: 0rem;
 	}
 	#verti {
-		height: 300rem;
+		height: 320rem;
 		margin-top: -0.5rem;
 	}
 	.baseline {

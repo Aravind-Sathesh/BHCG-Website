@@ -106,13 +106,9 @@ const Home = () => {
 					<div className='team-photo'>
 						<img src={teamPhoto} alt='full team image' />
 					</div>
-					<div className='baselinediv'>
-						<img
-							className='baseline'
-							src={baseline}
-							alt='Divider'
-						/>
-					</div>
+				</div>
+				<div className='baselinediv'>
+					<img className='baseline' src={baseline} alt='Divider' />
 				</div>
 			</div>
 			<Footer footerRef={footerRef} />

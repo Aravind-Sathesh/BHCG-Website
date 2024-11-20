@@ -12,14 +12,6 @@
 		}
 	}
 
-	.team-photo {
-		text-align: center;
-		img {
-			width: 80%;
-			padding: 2rem;
-		}
-	}
-
 	& > h1 {
 		font-family: $heading-font, serif;
 		font-weight: 600;
@@ -47,11 +39,6 @@
 		overflow-x: hidden;
 		.team-heading > img {
 			width: 90%;
-		}
-
-		.team-photo > img {
-			width: 90%;
-			padding: 1rem 0;
 		}
 
 		> h1 {

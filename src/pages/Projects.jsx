@@ -16,6 +16,8 @@ import grp5 from '../assets/projects/gp5.webp';
 import grp6 from '../assets/projects/gp6.webp';
 import grp7 from '../assets/projects/gp7.webp';
 import grp8 from '../assets/projects/gp8.webp';
+import grp9 from '../assets/projects/gp9.webp';
+import grp10 from '../assets/projects/gp10.webp';
 
 const Projects = () => {
 	const footerRef = useRef(null);
@@ -30,7 +32,7 @@ const Projects = () => {
 				<div className='main line flex'>
 					<img src={ellipse} className='anchor' alt='Anchor' />
 					<img id='verti' src={white_line} alt='' />
-					{Array.from({ length: 8 }).map((_, index) => (
+					{Array.from({ length: 10 }).map((_, index) => (
 						<img
 							key={index}
 							id={`dt${index + 1}`}
@@ -169,6 +171,41 @@ const Projects = () => {
 								Compiled the findings into a pitch deck for Ace
 								of Pubs, aiding them in onboarding more
 								restaurants.
+							</li>
+						</ul>
+					</ProjectsGRP>
+					<ProjectsGRP id='9' align='left' image={grp9}>
+						<p>
+							Over two months, BHCG supported Suvarna Consultants
+							by:
+						</p>
+						<ul>
+							<li>
+								Conducting market and competitive analysis for
+								strategic positioning.
+							</li>
+							<li>
+								Providing industry insights to guide focus
+								areas.
+							</li>
+							<li>
+								Enhancing client outreach and digital presence.
+							</li>
+						</ul>
+					</ProjectsGRP>
+
+					<ProjectsGRP id='10' align='right' image={grp10}>
+						<p>Estimated TAM across three verticals:</p>
+						<ul>
+							<li>Vertical 1: School adoption rates.</li>
+							<li>Vertical 2: Key product categories.</li>
+							<li>
+								Vertical 3: Student population and revenue
+								potential.
+							</li>
+							<li>
+								Provided SAM/TAM estimates and a starter
+								database.
 							</li>
 						</ul>
 					</ProjectsGRP>

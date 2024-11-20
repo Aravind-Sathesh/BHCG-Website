@@ -76,6 +76,8 @@
 
 	.team {
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		h1 {
@@ -86,8 +88,16 @@
 			margin: 0;
 			color: $teal;
 		}
-		img {
-			width: 75%;
+		.team-photo {
+			width: 85%;
+			display: flex;
+			justify-content: center;
+			img {
+				width: 85%;
+				border: 0.75rem solid transparent;
+				border-image: linear-gradient(to right, $teal, $light-teal) 1;
+				box-sizing: border-box;
+			}
 		}
 	}
 
