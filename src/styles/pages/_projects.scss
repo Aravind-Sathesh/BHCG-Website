@@ -75,68 +75,24 @@
 		position: absolute;
 		width: 2rem;
 	}
-	.gp1 {
-		top: 3%;
-	}
-	#dt1 {
-		top: 3%;
-	}
-	.gp2 {
-		top: 12%;
-	}
-	#dt2 {
-		top: 12%;
-	}
-	.gp3 {
-		top: 21%;
-	}
-	#dt3 {
-		top: 21%;
-	}
-	.gp4 {
-		top: 30%;
-	}
-	#dt4 {
-		top: 30%;
-	}
-	.gp5 {
-		top: 39%;
-	}
-	#dt5 {
-		top: 39%;
-	}
-	.gp6 {
-		top: 48%;
-	}
-	#dt6 {
-		top: 48%;
-	}
-	.gp7 {
-		top: 57%;
-	}
-	#dt7 {
-		top: 57%;
-	}
-	.gp8 {
-		top: 66%;
-	}
-	#dt8 {
-		top: 66%;
-	}
-	.gp9 {
-		top: 75%;
-		img {
-			margin: 1.5rem;
-			padding: 0.1rem;
-			border-radius: 0.25rem;
-			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+	// Variables for dynamic positions
+	$group-count: 10; // Total number of groups
+	$gap-percent: 9.5%; // Percentage gap between groups
+	$base-top: 3%; // Starting top percentage
+
+	@for $i from 1 through $group-count {
+		.gp#{$i} {
+			top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
+		}
+
+		#dt#{$i} {
+			top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
 		}
 	}
-	#dt9 {
-		top: 75%;
-	}
-	.gp10 {
-		top: 87%;
+
+	.gp1,
+	.gp2 {
 		img {
 			margin: 1.5rem;
 			padding: 0.5rem;
@@ -144,9 +100,7 @@
 			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 		}
 	}
-	#dt10 {
-		top: 87%;
-	}
+
 	.time {
 		color: $white;
 		font-size: 1.25rem;
@@ -163,7 +117,8 @@
 		margin-top: 0rem;
 	}
 	#verti {
-		height: 320rem;
+		height: 375rem;
+		width: 0.75rem;
 		margin-top: -0.5rem;
 	}
 	.baseline {
