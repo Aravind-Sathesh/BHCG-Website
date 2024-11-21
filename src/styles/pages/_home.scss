@@ -128,7 +128,9 @@
 				width: 95%;
 				img {
 					width: 95%;
-					border: 0.25rem solid transparent;
+					border: 0.5rem solid transparent;
+					border-image: linear-gradient(to right, $teal, $light-teal)
+						1;
 				}
 			}
 		}
