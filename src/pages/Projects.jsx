@@ -41,8 +41,6 @@ const Projects = () => {
 							alt={`Dot ${index + 1}`}
 						/>
 					))}
-					Here’s the updated code with IDs changed to be in order from
-					1 to 10:
 					<ProjectsGRP id='1' align='left' image={grp9}>
 						<p>
 							Over two months, BHCG supported Suvarna Consultants
