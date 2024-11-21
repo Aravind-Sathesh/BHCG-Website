@@ -41,6 +41,41 @@ const Projects = () => {
 							alt={`Dot ${index + 1}`}
 						/>
 					))}
+					<ProjectsGRP id='9' align='left' image={grp9}>
+						<p>
+							Over two months, BHCG supported Suvarna Consultants
+							by:
+						</p>
+						<ul>
+							<li>
+								Conducting market and competitive analysis for
+								strategic positioning.
+							</li>
+							<li>
+								Providing industry insights to guide focus
+								areas.
+							</li>
+							<li>
+								Enhancing client outreach and digital presence.
+							</li>
+						</ul>
+					</ProjectsGRP>
+
+					<ProjectsGRP id='10' align='right' image={grp10}>
+						<p>Estimated TAM across three verticals:</p>
+						<ul>
+							<li>Vertical 1: School adoption rates.</li>
+							<li>Vertical 2: Key product categories.</li>
+							<li>
+								Vertical 3: Student population and revenue
+								potential.
+							</li>
+							<li>
+								Provided SAM/TAM estimates and a starter
+								database.
+							</li>
+						</ul>
+					</ProjectsGRP>
 					<ProjectsGRP id='1' align='left' image={grp8}>
 						<ul>
 							<li>
@@ -171,41 +206,6 @@ const Projects = () => {
 								Compiled the findings into a pitch deck for Ace
 								of Pubs, aiding them in onboarding more
 								restaurants.
-							</li>
-						</ul>
-					</ProjectsGRP>
-					<ProjectsGRP id='9' align='left' image={grp9}>
-						<p>
-							Over two months, BHCG supported Suvarna Consultants
-							by:
-						</p>
-						<ul>
-							<li>
-								Conducting market and competitive analysis for
-								strategic positioning.
-							</li>
-							<li>
-								Providing industry insights to guide focus
-								areas.
-							</li>
-							<li>
-								Enhancing client outreach and digital presence.
-							</li>
-						</ul>
-					</ProjectsGRP>
-
-					<ProjectsGRP id='10' align='right' image={grp10}>
-						<p>Estimated TAM across three verticals:</p>
-						<ul>
-							<li>Vertical 1: School adoption rates.</li>
-							<li>Vertical 2: Key product categories.</li>
-							<li>
-								Vertical 3: Student population and revenue
-								potential.
-							</li>
-							<li>
-								Provided SAM/TAM estimates and a starter
-								database.
 							</li>
 						</ul>
 					</ProjectsGRP>
