@@ -41,7 +41,9 @@ const Projects = () => {
 							alt={`Dot ${index + 1}`}
 						/>
 					))}
-					<ProjectsGRP id='9' align='left' image={grp9}>
+					Here’s the updated code with IDs changed to be in order from
+					1 to 10:
+					<ProjectsGRP id='1' align='left' image={grp9}>
 						<p>
 							Over two months, BHCG supported Suvarna Consultants
 							by:
@@ -60,8 +62,7 @@ const Projects = () => {
 							</li>
 						</ul>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='10' align='right' image={grp10}>
+					<ProjectsGRP id='2' align='right' image={grp10}>
 						<p>Estimated TAM across three verticals:</p>
 						<ul>
 							<li>Vertical 1: School adoption rates.</li>
@@ -76,7 +77,7 @@ const Projects = () => {
 							</li>
 						</ul>
 					</ProjectsGRP>
-					<ProjectsGRP id='1' align='left' image={grp8}>
+					<ProjectsGRP id='3' align='left' image={grp8}>
 						<ul>
 							<li>
 								Identified a new vertical market that now
@@ -90,8 +91,7 @@ const Projects = () => {
 							</li>
 						</ul>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='2' align='right' image={grp7}>
+					<ProjectsGRP id='4' align='right' image={grp7}>
 						<p className='gp-5-top'>
 							Strategy: Conduct market research, identify growth
 							opportunities, optimize go-to-market strategies.
@@ -105,8 +105,7 @@ const Projects = () => {
 							features, plan and launch MVPs.
 						</p>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='3' align='left' image={grp6}>
+					<ProjectsGRP id='5' align='left' image={grp6}>
 						<ul>
 							<li>
 								User assessment, categorization, and product
@@ -123,8 +122,7 @@ const Projects = () => {
 							</li>
 						</ul>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='4' align='right' image={grp5}>
+					<ProjectsGRP id='6' align='right' image={grp5}>
 						<p className='gp-5-top'>Vendor Analysis</p>
 						<p>
 							Offline Partners: <br />
@@ -141,8 +139,7 @@ const Projects = () => {
 							growth and expand market reach.
 						</p>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='5' align='left' image={grp4}>
+					<ProjectsGRP id='7' align='left' image={grp4}>
 						<p>A community-based social media platform</p>
 						<ul>
 							<li>
@@ -157,8 +154,7 @@ const Projects = () => {
 							</li>
 						</ul>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='6' align='right' image={grp3}>
+					<ProjectsGRP id='8' align='right' image={grp3}>
 						<ul>
 							<li>Market Study & Collaboration Strategy</li>
 							<li>Branding Strategy</li>
@@ -172,8 +168,7 @@ const Projects = () => {
 							</li>
 						</ul>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='7' align='left' image={grp2}>
+					<ProjectsGRP id='9' align='left' image={grp2}>
 						<p>
 							An extensive Competitor and Market analysis for
 							Restat, an upcoming open-source tech start-up.
@@ -191,8 +186,7 @@ const Projects = () => {
 							</li>
 						</ul>
 					</ProjectsGRP>
-
-					<ProjectsGRP id='8' align='right' image={grp1}>
+					<ProjectsGRP id='10' align='right' image={grp1}>
 						<p>
 							Ace of Pubs, A start-up that conducts 150+ quizzes
 							per month in restaurants across India.
