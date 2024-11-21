@@ -124,6 +124,13 @@
 		}
 		.team {
 			margin-bottom: 4rem;
+			.team-photo {
+				width: 95%;
+				img {
+					width: 95%;
+					border: 0.25rem solid transparent;
+				}
+			}
 		}
 		.stats {
 			flex-direction: column;
