@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourwebsite.com/home</loc>
+    <loc>https://bhcg.netlify.app/home</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/product-management</loc>
+    <loc>https://bhcg.netlify.app/product-management</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/consulting</loc>
+    <loc>https://bhcg.netlify.app/consulting</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/blog</loc>
+    <loc>https://bhcg.netlify.app/blog</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/resources</loc>
+    <loc>https://bhcg.netlify.app/resources</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/events</loc>
+    <loc>https://bhcg.netlify.app/events</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/alumni</loc>
+    <loc>https://bhcg.netlify.app/alumni</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/projects</loc>
+    <loc>https://bhcg.netlify.app/projects</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/leadership</loc>
+    <loc>https://bhcg.netlify.app/leadership</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/</loc>
+    <loc>https://bhcg.netlify.app/</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/blog/:blogid</loc>
+    <loc>https://bhcg.netlify.app/blog/:blogid</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourwebsite.com/resources</loc>
+    <loc>https://bhcg.netlify.app/resources</loc>
     <lastmod>2024-11-06</lastmod>
     <priority>0.8</priority>
   </url>
