@@ -1,6 +1,20 @@
 [
 	{
 		"id": 1,
+		"company": "gosharpener",
+		"logo": "/project-logos/gosharpener.webp",
+		"content": {
+			"paragraphs": ["Estimated TAM across three verticals:"],
+			"bulletPoints": [
+				"Vertical 1: School adoption rates.",
+				"Vertical 2: Key product categories.",
+				"Vertical 3: Student population and revenue potential.",
+				"Provided SAM/TAM estimates and a starter database."
+			]
+		}
+	},
+	{
+		"id": 2,
 		"company": "suvarna",
 		"logo": "/project-logos/suvarna.webp",
 		"content": {
@@ -11,20 +25,6 @@
 				"Conducting market and competitive analysis for strategic positioning.",
 				"Providing industry insights to guide focus areas.",
 				"Enhancing client outreach and digital presence."
-			]
-		}
-	},
-	{
-		"id": 2,
-		"company": "gosharpener",
-		"logo": "/project-logos/gosharpener.webp",
-		"content": {
-			"paragraphs": ["Estimated TAM across three verticals:"],
-			"bulletPoints": [
-				"Vertical 1: School adoption rates.",
-				"Vertical 2: Key product categories.",
-				"Vertical 3: Student population and revenue potential.",
-				"Provided SAM/TAM estimates and a starter database."
 			]
 		}
 	},
