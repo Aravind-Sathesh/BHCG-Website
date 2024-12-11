@@ -45,6 +45,7 @@ const BlogCard = ({ id, image, tags, title, date }) => {
 					borderRadius: 1,
 					borderStyle: 'solid',
 					borderWidth: 2,
+					objectPosition: 'top',
 					objectFit: 'cover',
 					borderColor: '#027F7B',
 				}}
