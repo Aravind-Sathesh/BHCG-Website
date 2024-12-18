@@ -1,20 +1,17 @@
 import React, { useRef } from 'react';
 import BlogCard from '../components/BlogCard';
 import Header from '../components/Header';
+import Title from '../components/Title';
 import Footer from '../components/Footer';
 import ResourceCard from '../components/ResourceCard';
 import blogs from '../blogs.json';
-
-import resourceheading from '../assets/resources/ResourcesHeading.webp';
-import blogheading from '../assets/resources/BlogsHeading.webp';
-
 import baseline from '../assets/teal_baseline.webp';
 
-import bmc from '../assets/resources/resources/bmc.webp';
-import eoc from '../assets/resources/resources/eoc.webp';
-import bhcgbrochure from '../assets/resources/resources/bhcgbrochure.webp';
-import casebook from '../assets/resources/resources/casebook.webp';
-import handbook from '../assets/resources/resources/handbook.webp';
+import bmc from '../assets/resources/bmc.webp';
+import eoc from '../assets/resources/eoc.webp';
+import bhcgbrochure from '../assets/resources/bhcgbrochure.webp';
+import casebook from '../assets/resources/casebook.webp';
+import handbook from '../assets/resources/handbook.webp';
 
 const Resources = () => {
 	const footerRef = useRef(null);
@@ -23,9 +20,7 @@ const Resources = () => {
 		<>
 			<Header type={'light'} footerRef={footerRef} />
 			<div className='RESOURCES'>
-				<div className='heading'>
-					<img src={resourceheading} alt='Resources Heading' />
-				</div>
+				<Title titleName='resources' themeColor='teal' />
 				<div className='resources flexwrap'>
 					<ResourceCard
 						image={casebook}
@@ -63,10 +58,7 @@ const Resources = () => {
 						description='A detailed guide filled with practical insights, best practices, and essential tools for aspiring and experienced product managers. It is an invaluable resource for navigating the challenges of product management.'
 					/>
 				</div>
-				<div className='heading'>
-					<img src={blogheading} alt='Blogs Heading' />
-				</div>
-
+				<Title titleName='blogs' themeColor='teal' />
 				<div className='blogs flexwrap'>
 					{blogs.map((blog) => (
 						<BlogCard

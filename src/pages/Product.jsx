@@ -1,13 +1,11 @@
 import React, { useRef } from 'react';
 import Header from '../components/Header';
+import Title from '../components/Title';
 import Footer from '../components/Footer';
 import WhatWeDo from '../components/WhatWeDo';
-
-import heading from '../assets/product_consulting/product.webp';
+import baseline from '../assets/teal_baseline.webp';
 import ProdStorm_CaseCompetition from '../components/ProdStorm_CaseCompetition';
 import Product_Speakers from '../components/Product_Speakers';
-
-import baseline from '../assets/teal_baseline.webp';
 
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,9 +17,7 @@ const Product = () => {
 		<div className='PRODUCT'>
 			<Header type={'light'} footerRef={footerRef} />
 			<div>
-				<div className='heading'>
-					<img src={heading} alt='Heading' />
-				</div>
+				<Title titleName='product' themeColor='teal' />
 				<WhatWeDo
 					heading='What We Do'
 					content='In the realm of product management, our club is

@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import Header from '../components/Header';
+import Title from '../components/Title';
 import Footer from '../components/Footer';
 import AlumniCard from '../components/AlumniCard';
 import alumni from '../alumni.json';
-import heading from '../assets/alumni-heading.webp';
 import baseline from '../assets/white_baseline.webp';
 
 const Alumni = () => {
@@ -13,21 +13,7 @@ const Alumni = () => {
 		<>
 			<Header type={'colour projects'} footerRef={footerRef} />
 			<div className='ALUMNI'>
-				<div
-					className='heading'
-					style={{
-						width: '100%',
-						textAlign: 'center',
-						padding: '2rem 0',
-					}}
-				>
-					<img
-						src={heading}
-						alt='Alumni Heading'
-						style={{ width: '90%', maxWidth: '1200px' }}
-					/>
-				</div>
-
+				<Title titleName='ALUMNI' themeColor='white' />
 				<div className='alumni flexwrap'>
 					{alumni.map((alumni) => (
 						<AlumniCard

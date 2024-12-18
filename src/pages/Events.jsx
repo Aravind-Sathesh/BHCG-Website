@@ -1,13 +1,12 @@
 import React, { useRef } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Title from '../components/Title';
 import EventCard from '../components/EventCard';
 import { Container, Typography, Box } from '@mui/material';
+import baseline from '../assets/teal_baseline.webp';
 
 import events from '../events.json';
-
-import baseline from '../assets/teal_baseline.webp';
-import heading from '../assets/events-heading.webp';
 
 const Events = () => {
 	const footerRef = useRef(null);
@@ -54,16 +53,7 @@ const Events = () => {
 	return (
 		<>
 			<Header type={'light'} footerRef={footerRef} />
-			<div
-				className='heading'
-				style={{ width: '100%', textAlign: 'center' }}
-			>
-				<img
-					src={heading}
-					alt='Heading'
-					style={{ width: '90%', maxWidth: '1200px' }}
-				/>
-			</div>
+			<Title titleName='EVENTS' themeColor='teal' />
 			<Container
 				sx={{ width: '100%', marginBottom: { xs: '2rem', md: '0' } }}
 			>

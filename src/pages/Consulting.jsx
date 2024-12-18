@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Header from '../components/Header';
+import Title from '../components/Title';
 import Footer from '../components/Footer';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +16,6 @@ import car_3 from '../assets/home/car_3.png';
 import car_4 from '../assets/home/car_4.png';
 
 import baseline from '../assets/teal_baseline.webp';
-import heading from '../assets/product_consulting/consulting.webp';
 
 const Consulting = () => {
 	const footerRef = useRef(null);
@@ -24,9 +24,7 @@ const Consulting = () => {
 		<div className='CONSULTING'>
 			<Header type={'light'} footerRef={footerRef} />
 			<div>
-				<div className='heading'>
-					<img src={heading} alt='Heading' />
-				</div>
+				<Title titleName='consulting' themeColor='teal' />
 				<WhatWeDo
 					heading='What We Do'
 					content='We are the Management Club of BITS Hyderabad, dedicated to fostering a community of consulting enthusiasts. Our club provides consultancy services to startups, non-profit organizations, and corporate firms. To help students develop their consulting skills, we organize workshops and host fireside chats with founders, executives, and industry veterans. These activities offer valuable insights and practical knowledge, preparing students for real-world challenges in the consulting industry.'

@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import Header from '../components/Header';
+import Title from '../components/Title';
 import Footer from '../components/Footer';
 import ProjectsGRP from '../components/Project';
 import projects from '../projects.json';
-import heading from '../assets/projects/Heading.webp';
 import white_line from '../assets/projects/white_line.webp';
 import ellipse from '../assets/projects/Ellipse.webp';
 import baseline from '../assets/white_baseline.webp';
@@ -15,9 +15,7 @@ const Projects = () => {
 		<>
 			<Header type={'colour projects'} footerRef={footerRef} />
 			<div className='PROJECTS'>
-				<div className='team-heading'>
-					<img src={heading} alt='projects heading' />
-				</div>
+				<Title titleName='projects' themeColor='white' />
 				<div className='main line flex'>
 					<img src={ellipse} className='anchor' alt='Anchor' />
 					<img id='verti' src={white_line} alt='' />

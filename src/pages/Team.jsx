@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import Header from '../components/Header';
+import Title from '../components/Title';
 import Footer from '../components/Footer';
 import TeamPOR from '../components/Leader';
-
-import heading from '../assets/team/Heading.webp';
 import baseline from '../assets/teal_baseline.webp';
 
 import por_2 from '../assets/team/por_2.webp';
@@ -19,9 +18,7 @@ const Team = () => {
 		<>
 			<Header type={'light'} footerRef={footerRef} />
 			<div className='TEAM'>
-				<div className='team-heading'>
-					<img src={heading} alt='our team heading' />
-				</div>
+				<Title titleName='leadership' themeColor='teal' />
 				<div className='porContainer'>
 					<TeamPOR
 						align='left'
