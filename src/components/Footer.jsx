@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import dayjs from 'dayjs';
-import { Tooltip, Typography } from '@mui/material';
 
 import facebookIcon from '../assets/footer/facebook.svg';
 import instagramIcon from '../assets/footer/instagram.svg';
@@ -98,37 +97,7 @@ const Footer = ({ footerRef }) => {
 				</div>
 			</div>
 			<div className='end flex'>
-				<Tooltip
-					title={
-						<div style={{ textAlign: 'center' }}>
-							<Typography
-								variant='subtitle2'
-								component='div'
-								align='center'
-							>
-								<strong>Designed and Developed by BHCG</strong>
-							</Typography>
-							<Typography
-								variant='body2'
-								component='div'
-								align='center'
-							>
-								Aravind Sathesh
-								<br />
-								Rithvik Vallivedu
-								<br />
-								Atiksh Gupta
-								<br />
-								Aakrit Jain
-								<br />
-								Vedika Kothawade
-							</Typography>
-						</div>
-					}
-					placement='top'
-				>
-					<span>{`© BHCG ${year}`}</span>
-				</Tooltip>
+				<span>{`© BHCG ${year}`}</span>
 			</div>
 		</footer>
 	);
