@@ -4,7 +4,7 @@
 	font-family: $body-font, sans-serif;
 
 	.background {
-		height: max(calc(100vh + 2rem), 47rem);
+		height: max(calc(100vh + 8rem), 47rem);
 		width: 100%;
 		object-fit: cover;
 		transform: translateY(-10rem);
@@ -13,7 +13,7 @@
 	}
 
 	.rectangle {
-		height: max(calc(100vh - 8rem), 37rem);
+		height: max(calc(100vh - 2rem), 37rem);
 		width: 100%;
 		z-index: -2;
 		position: absolute;
@@ -25,7 +25,7 @@
 		padding-right: 5rem;
 		padding-left: 5rem;
 		padding-bottom: calc(100vh - 47rem);
-		height: max(calc(100vh - 8rem), 37rem);
+		height: max(calc(100vh - 2rem), 37rem);
 		position: relative;
 		z-index: 5;
 		h1 {

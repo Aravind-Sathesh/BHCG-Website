@@ -5,11 +5,6 @@
 	flex-direction: column;
 	align-items: center;
 
-	.flex {
-		display: flex;
-		width: 80%;
-	}
-
 	h1 {
 		padding-bottom: 4rem;
 		font-family: $heading-font, serif;
@@ -19,72 +14,110 @@
 		margin: 0;
 	}
 
-	.content {
-		min-width: 20rem;
-		margin: 0 0 0 5rem;
-		background-color: $light-teal;
+	.flex {
 		display: flex;
-		border-radius: 1rem;
-		text-align: center;
-		box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-		p {
-			text-align: center;
-		}
+		width: 80%;
 	}
 
-	.carousel {
+	.component-content {
 		text-align: justify;
 		font-family: $heading-font, serif;
 		font-weight: 400;
 		color: $teal;
 		font-size: 1.5rem;
+
 		p {
 			text-align: center;
 		}
 	}
 
-	.slide {
-		padding: 2rem;
-	}
-	.carousel-control-next,
-	.carousel-control-prev {
-		margin-top: 3.5vw;
-	}
-
-	.carousel-inner {
-		padding-top: 2rem;
+	.component-carousel {
+		min-width: 20rem;
+		margin-left: 5rem;
+		display: flex;
+		justify-content: center;
+		border-radius: 0.5rem;
 		text-align: center;
-		color: $white;
-		img {
-			width: 75%;
+
+		.slide {
+			border-radius: 0.5rem;
+			background-color: $light-teal;
+			box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 		}
-		h3 {
-			padding: 3rem 0 1rem 0;
+
+		.card {
+			padding: 2rem;
+			border-radius: 0.5rem;
+			border-color: $light-teal;
+			align-items: center;
+			background-color: $light-teal;
+			color: $white;
+
+			img {
+				width: 75%;
+			}
+
+			h3 {
+				padding: 3rem 0 1rem;
+			}
+
+			p {
+				font-family: $body-font, sans-serif;
+				font-size: 1.25rem;
+				min-height: 9rem;
+			}
 		}
-		p {
-			font-family: $body-font, sans-serif;
-			font-size: 1.25rem;
-			min-height: 9rem;
+
+		.carousel-control-prev,
+		.carousel-control-next {
+			margin-top: 3.5vw;
+		}
+
+		.carousel-inner {
+			border-radius: 0.5rem;
+			max-width: 20rem;
+			text-align: center;
+			color: $white;
 		}
 	}
 
 	@media screen and (max-width: 1500px) {
-		.content {
+		.component-carousel {
 			min-width: 30%;
 			max-width: 30%;
 		}
 	}
 
 	@media screen and (max-width: 768px) {
+		padding: 4rem 2rem;
+
 		.flex {
 			flex-direction: column;
 			width: 100%;
 			gap: 2rem;
-			.carousel {
+
+			.component-content {
 				p {
 					font-size: 0.85rem;
 					line-height: 1.5rem;
 				}
+			}
+
+			.component-carousel {
+				margin: 0;
+				min-width: 100%;
+				min-height: 30rem;
+
+				.card {
+					h3 {
+						font-size: 1.75rem;
+					}
+
+					p {
+						font-size: 1.25rem;
+					}
+				}
+
 				.carousel-control-next {
 					padding-left: 1.4rem;
 				}
@@ -93,21 +126,6 @@
 					padding-right: 1.4rem;
 				}
 			}
-			.content {
-				margin: 0;
-				min-width: 100%;
-				min-height: 30rem;
-				h3 {
-					font-size: 1.75rem;
-				}
-
-				p {
-					font-size: 1.25rem;
-				}
-			}
 		}
-	}
-	@media screen and (max-width: 768px) {
-		padding: 4rem 2rem;
 	}
 }
