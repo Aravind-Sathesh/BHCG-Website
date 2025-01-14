@@ -1,4 +1,4 @@
-# BHCG React Website
+# BHCG Website
 
 ## Table of Contents
 
