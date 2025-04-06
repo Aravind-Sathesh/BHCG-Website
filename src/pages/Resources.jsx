@@ -65,6 +65,7 @@ const Resources = () => {
 							key={blog.id}
 							id={blog.id}
 							image={blog.image}
+							author={blog.author}
 							tags={blog.tags}
 							title={blog.title}
 							date={blog.date}

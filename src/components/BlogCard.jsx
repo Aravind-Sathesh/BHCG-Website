@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const BlogCard = ({ id, image, tags, title, date }) => {
+const BlogCard = ({ id, image, tags, title, date, author }) => {
 	const navigate = useNavigate();
 
 	const handleCardClick = () => {
@@ -102,6 +102,18 @@ const BlogCard = ({ id, image, tags, title, date }) => {
 					sx={{
 						color: '#027F7B',
 						marginTop: 'auto',
+						fontFamily: 'Poppins, serif',
+					}}
+				>
+					{author}
+				</Typography>
+				<Typography
+					variant='body2'
+					fontWeight={500}
+					sx={{
+						color: '#027F7B',
+						marginTop: 'auto',
+						paddingTop: '0.5rem',
 						fontFamily: 'Poppins, serif',
 					}}
 				>
