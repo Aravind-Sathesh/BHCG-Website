@@ -17,6 +17,18 @@ const BlogPage = () => {
 	const footerRef = useRef(null);
 
 	useEffect(() => {
+		const originalTitle = document.title;
+
+		if (blog) {
+			document.title = `${blog.title} | BHCG Blogs`;
+		}
+
+		return () => {
+			document.title = originalTitle;
+		};
+	}, [blog]);
+
+	useEffect(() => {
 		const handleScroll = () => {
 			if (window.pageYOffset > window.innerHeight / 2) {
 				setShowButton(true);
