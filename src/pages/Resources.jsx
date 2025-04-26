@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Title from '../components/Title';
 import Footer from '../components/Footer';
 import ResourceCard from '../components/ResourceCard';
-import blogs from '../blogs.json';
+import blogs from '../data/blogs.json';
 import baseline from '../assets/teal_baseline.webp';
 
 import bmc from '../assets/resources/bmc.webp';

@@ -6,7 +6,7 @@ import EventCard from '../components/EventCard';
 import { Container, Typography, Box } from '@mui/material';
 import baseline from '../assets/teal_baseline.webp';
 
-import events from '../events.json';
+import events from '../data/events.json';
 
 const Events = () => {
 	const footerRef = useRef(null);

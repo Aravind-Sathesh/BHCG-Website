@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import blogData from '../blogs.json';
+import blogData from '../data/blogs.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Paper, Button, Divider } from '@mui/material';

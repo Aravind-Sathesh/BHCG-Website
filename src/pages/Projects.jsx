@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Title from '../components/Title';
 import Footer from '../components/Footer';
 import ProjectsGRP from '../components/Project';
-import projects from '../projects.json';
+import projects from '../data/projects.json';
 import white_line from '../assets/projects/white_line.webp';
 import ellipse from '../assets/projects/Ellipse.webp';
 import baseline from '../assets/white_baseline.webp';

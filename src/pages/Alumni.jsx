@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Title from '../components/Title';
 import Footer from '../components/Footer';
 import AlumniCard from '../components/AlumniCard';
-import alumni from '../alumni.json';
+import alumni from '../data/alumni.json';
 import baseline from '../assets/white_baseline.webp';
 
 const Alumni = () => {
