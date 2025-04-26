@@ -10,6 +10,10 @@ import baseline from '../assets/white_baseline.webp';
 
 const Projects = () => {
 	const footerRef = useRef(null);
+	const reversedProjects = [...projects].reverse();
+	const numProjects = reversedProjects.length;
+
+	console.log(reversedProjects);
 
 	return (
 		<>
@@ -17,44 +21,60 @@ const Projects = () => {
 			<div className='PROJECTS'>
 				<Title titleName='projects' themeColor='white' />
 				<div className='main line flex'>
-					<img src={ellipse} className='anchor' alt='Anchor' />
-					<img id='verti' src={white_line} alt='' />
-					{Array.from({ length: 10 }).map((_, index) => (
-						<img
-							key={index}
-							id={`dt${index + 1}`}
-							className='dots'
-							src={ellipse}
-							alt={`Dot ${index + 1}`}
-						/>
-					))}
-					{projects.map((project, index) => (
+					{numProjects > 0 && (
+						<>
+							<img id='verti' src={white_line} alt='Timeline' />
+							{Array.from({ length: numProjects }).map(
+								(_, index) => (
+									<img
+										key={`dot-${index}`}
+										id={`dt${index + 1}`}
+										className='dots'
+										src={ellipse}
+										alt={`Timeline Dot ${index + 1}`}
+									/>
+								)
+							)}
+						</>
+					)}
+
+					{reversedProjects.map((project, index) => (
 						<ProjectsGRP
-							key={project.id}
-							id={project.id}
+							key={project.id || `project-${index}`}
+							id={numProjects - project.id + 1}
+							company={project.company}
 							align={index % 2 === 0 ? 'left' : 'right'}
 							image={project.logo}
 						>
-							{project.content.paragraphs.map(
-								(paragraph, idx) => (
-									<p key={`paragraph-${idx}`}>{paragraph}</p>
-								)
-							)}
-							{project.content.bulletPoints.length > 0 && (
-								<ul>
-									{project.content.bulletPoints.map(
-										(point, idx) => (
-											<li key={`bullet-${idx}`}>
-												{point}
-											</li>
-										)
-									)}
-								</ul>
-							)}
+							{project.content.paragraphs &&
+								project.content.paragraphs.length > 0 &&
+								project.content.paragraphs.map(
+									(paragraph, idx) => (
+										<p key={`p-${project.id}-${idx}`}>
+											{paragraph}
+										</p>
+									)
+								)}
+							{project.content.bulletPoints &&
+								project.content.bulletPoints.length > 0 && (
+									<ul>
+										{project.content.bulletPoints.map(
+											(point, idx) => (
+												<li
+													key={`bp-${project.id}-${idx}`}
+												>
+													{point}
+												</li>
+											)
+										)}
+									</ul>
+								)}
 						</ProjectsGRP>
 					))}
 				</div>
-				<img className='baseline' src={baseline} alt='Divider' />
+				{numProjects > 0 && (
+					<img className='baseline' src={baseline} alt='Divider' />
+				)}
 			</div>
 			<Footer footerRef={footerRef} />
 		</>

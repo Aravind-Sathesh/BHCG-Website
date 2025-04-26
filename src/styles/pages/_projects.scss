@@ -1,9 +1,12 @@
 .PROJECTS {
 	background: linear-gradient($light-teal, $teal);
 	text-align: center;
+	overflow-x: hidden;
+
 	* {
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
 	}
 
 	body {
@@ -29,15 +32,40 @@
 		align-items: center;
 		flex-direction: column;
 	}
+
 	.line {
 		flex-direction: column;
 		position: relative;
 	}
+
 	.main {
 		padding-bottom: 4rem;
 		margin-top: 3rem;
 		text-align: left;
 		font-family: $body-font, sans-serif;
+
+		.anchor {
+			position: absolute;
+
+			top: 1%;
+			width: 2rem;
+		}
+
+		#verti {
+			height: 375rem;
+			width: 0.75rem;
+			margin-top: -0.5rem;
+
+			position: relative;
+			z-index: 1;
+		}
+
+		.dots {
+			position: absolute;
+			width: 2rem;
+			z-index: 2;
+		}
+
 		.text {
 			background-color: $white;
 			color: $teal;
@@ -45,91 +73,82 @@
 			border-radius: 0.5rem;
 			font-size: 1.25rem;
 			font-weight: 600;
-			padding-bottom: 3rem;
+			padding: 1.5rem;
+			display: flex;
+			flex-direction: column;
+
 			img {
-				max-width: 50%;
-				max-height: 6rem;
+				object-fit: contain;
+				margin: -1.25rem 0 0.5rem -1.25rem;
+				align-self: flex-start;
+				max-height: 7.5rem;
 			}
 		}
+
 		p {
-			padding-left: 1.5rem;
-			padding-right: 1rem;
+			padding: 0;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 		ul {
-			padding-right: 1rem;
-			padding-left: 4rem;
+			padding: 0;
+			margin-top: 1rem;
+			margin-left: 1.5rem;
+			list-style: disc;
 		}
 		li {
-			margin-top: 1.5rem;
+			margin-top: 0.5rem;
 		}
 	}
+
 	.group {
 		display: flex;
-		gap: 1rem;
+		width: fit-content;
+		z-index: 3;
 	}
+
 	.gp-left {
 		position: absolute;
 		left: 20%;
-	}
-	.dots {
-		position: absolute;
-		width: 2rem;
+		justify-content: flex-start;
 	}
 
-	// Variables for dynamic positions
-	$group-count: 10; // Total number of groups
-	$gap-percent: 9.5%; // Percentage gap between groups
-	$base-top: 3%; // Starting top percentage
+	.gp-right {
+		position: absolute;
+		right: 20%;
+		justify-content: flex-end;
+	}
+
+	$group-count: 11;
+	$gap-percent: 8.75%;
+	$base-top: 1%;
 
 	@for $i from 1 through $group-count {
 		.gp#{$i} {
-			top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
+			@media screen and (min-width: 769px) {
+				top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
+			}
 		}
 
 		#dt#{$i} {
-			top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
+			@media screen and (min-width: 769px) {
+				top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
+			}
 		}
 	}
 
-	.gp1,
-	.gp2 {
-		img {
-			margin: 1.5rem;
-			padding: 0.5rem;
-			border-radius: 0.25rem;
-			box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-		}
-	}
-
-	.time {
-		color: $white;
-		font-size: 1.25rem;
-	}
-	.gp-right {
-		flex-direction: row-reverse;
-		position: absolute;
-		right: 20%;
-	}
-	#gp-5-text p {
-		margin-top: 1rem;
-	}
-	#gp-5-top {
-		margin-top: 0rem;
-	}
-	#verti {
-		height: 375rem;
-		width: 0.75rem;
-		margin-top: -0.5rem;
-	}
 	.baseline {
 		padding-bottom: 1.5rem;
+		display: block;
+		margin: 2rem auto 0;
+		width: 80%;
 	}
 
 	@media screen and (max-width: 1600px) {
 		.gp-left {
 			left: 15%;
 		}
-
 		.gp-right {
 			right: 15%;
 		}
@@ -139,48 +158,80 @@
 		.gp-left {
 			left: 10%;
 		}
-
 		.gp-right {
 			right: 10%;
 		}
 	}
 
+	@media screen and (max-width: 1100px) {
+		.main .text {
+			width: 24rem;
+		}
+		.gp-left {
+			left: 5%;
+		}
+		.gp-right {
+			right: 5%;
+		}
+	}
+
 	@media screen and (max-width: 768px) {
-		#verti {
-			display: none;
-		}
-
 		.main {
-			margin-top: 0;
+			margin-top: 1rem;
 			padding-bottom: 2rem;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
 		}
 
+		#verti,
 		.anchor,
 		.dots {
 			display: none;
 		}
 
-		.team-heading > img {
-			width: 90%;
-		}
-
 		.group {
-			transform: scale(0.8) !important;
-			position: relative;
-			margin-bottom: -4rem;
+			position: relative !important;
+			width: 90%;
+			max-width: 500px;
+			margin-bottom: 0;
+
+			left: unset !important;
+			right: unset !important;
+			top: unset !important;
+			display: flex;
+			justify-content: center;
 		}
 
-		.gp-left {
-			left: unset;
-		}
-
+		.gp-left,
 		.gp-right {
+			position: relative;
+			left: unset;
 			right: unset;
+			top: unset;
+			justify-content: center;
+		}
+
+		.main .text {
+			width: 100%;
+			font-size: 1rem;
+			padding: 1rem;
+
+			img {
+				max-width: 100px;
+				max-height: 4rem;
+			}
+		}
+
+		ul {
+			margin-left: 1rem;
 		}
 
 		.baseline {
-			margin-top: 4rem;
-			padding-bottom: 0;
+			margin-top: 2rem;
+			padding-bottom: 1.5rem;
 			width: 90%;
 		}
 	}
