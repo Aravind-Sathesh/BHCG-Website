@@ -1,4 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
+import { motion, animate, useInView } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WhatWeDo from '../components/WhatWeDo';
@@ -12,59 +13,94 @@ import teamPhoto from '../assets/team/fullteam.webp';
 
 const Home = () => {
 	const footerRef = useRef(null);
-
 	const statsRef = useRef(null);
-	const [stats, updateStats] = useState([0, 0, 0]);
+
+	const studentsCountRef = useRef(null);
+	const projectsCountRef = useRef(null);
+	const expCountRef = useRef(null);
+
+	const isInView = useInView(statsRef, { once: true, amount: 0.2 });
+
 	const STUDENTS = 200;
 	const PROJECTS = 10;
 	const EXP = 6;
 
 	useEffect(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				const entry = entries[0];
-				if (entry.isIntersecting) {
-					const interval = setInterval(() => {
-						updateStats((prevStats) => {
-							const [stat1, stat2, stat3] = prevStats;
+		let controlsStudents, controlsProjects, controlsExp;
 
-							const newStat1 = Math.min(stat1 + 13, STUDENTS);
-							const newStat2 = Math.min(stat2 + 1, PROJECTS);
-							const newStat3 = Math.min(stat3 + 1, EXP);
+		if (isInView) {
+			controlsStudents = animate(0, STUDENTS, {
+				duration: 1.5,
+				ease: 'easeOut',
+				onUpdate(value) {
+					if (studentsCountRef.current) {
+						studentsCountRef.current.textContent =
+							Math.round(value).toLocaleString();
+					}
+				},
+			});
 
-							if (
-								newStat1 === STUDENTS &&
-								newStat2 === PROJECTS &&
-								newStat3 === EXP
-							) {
-								clearInterval(interval);
-							}
+			controlsProjects = animate(0, PROJECTS, {
+				duration: 1.2,
+				delay: 0.2,
+				ease: 'easeOut',
+				onUpdate(value) {
+					if (projectsCountRef.current) {
+						projectsCountRef.current.textContent =
+							Math.round(value).toLocaleString();
+					}
+				},
+			});
 
-							return [newStat1, newStat2, newStat3];
-						});
-					}, 90);
-
-					observer.disconnect();
-				}
-			},
-			{ threshold: 0.3 }
-		);
-
-		if (statsRef.current) {
-			observer.observe(statsRef.current);
+			controlsExp = animate(0, EXP, {
+				duration: 1.0,
+				delay: 0.4,
+				ease: 'easeOut',
+				onUpdate(value) {
+					if (expCountRef.current) {
+						expCountRef.current.textContent =
+							Math.round(value).toLocaleString();
+					}
+				},
+			});
 		}
 
 		return () => {
-			if (observer && statsRef.current) {
-				observer.unobserve(statsRef.current);
-			}
+			controlsStudents?.stop();
+			controlsProjects?.stop();
+			controlsExp?.stop();
 		};
-	}, []);
+	}, [isInView]);
+
+	const statsContainerVariants = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.3,
+				delayChildren: 0.2,
+			},
+		},
+	};
+
+	const statItemVariants = {
+		hidden: { opacity: 0, y: 20, scale: 0.95 },
+		visible: {
+			opacity: 1,
+			y: 0,
+			scale: 1,
+			transition: {
+				duration: 0.5,
+				ease: 'easeOut',
+			},
+		},
+	};
 
 	return (
 		<>
 			<Header type={'colour'} footerRef={footerRef} />
 			<div className='HOME'>
+				{/* --- Keep existing structure --- */}
 				<img
 					className='background'
 					src={background}
@@ -87,20 +123,29 @@ const Home = () => {
 					heading='About BHCG'
 					content='The BITS Hyderabad Consulting Group (BHCG) is a vibrant student-led organization established in 2018 to foster a robust consulting and product management culture on campus. At BHCG, we are driven by a community of dedicated and passionate students who collaborate to achieve significant milestones in management and strategy consulting. Our mission extends beyond campus boundaries, as we offer consultancy and product management services to startups, non-profits, and corporate firms in the form of live-projects. We facilitate skill development and industry exposure through workshops and cohorts, sessions with industry leaders, and participation in national competitions providing students with practical, hands-on experience. Through our initiatives, BHCG aims to make a lasting impact on businesses and society, nurturing the next generation of consulting and product management leaders within our campus and beyond.'
 				/>
-				<div className='stats' ref={statsRef}>
-					<div className='stat 0'>
-						{stats[0] + '+'}
+				<motion.div
+					className='stats'
+					ref={statsRef}
+					variants={statsContainerVariants}
+					whileInView='visible'
+					viewport={{ once: true, amount: 0.2 }}
+				>
+					{/* Apply item animation variants to each stat */}
+					<motion.div className='stat 0' variants={statItemVariants}>
+						{/* Span with ref for the counter */}
+						<span ref={studentsCountRef}>0</span>+
 						<p>Students Empowered</p>
-					</div>
-					<div className='stat 1'>
-						{stats[1] + '+'}
+					</motion.div>
+					<motion.div className='stat 1' variants={statItemVariants}>
+						<span ref={projectsCountRef}>0</span>+
 						<p>Live Projects</p>
-					</div>
-					<div className='stat 2'>
-						{stats[2] + '+'}
+					</motion.div>
+					<motion.div className='stat 2' variants={statItemVariants}>
+						<span ref={expCountRef}>0</span>+
 						<p>Years of Experience</p>
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
+
 				<div className='team'>
 					<h1>Our Team</h1>
 					<div className='team-photo'>

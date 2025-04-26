@@ -22,7 +22,7 @@ const Footer = ({ footerRef }) => {
 			<div className='lastdiv flex'>
 				<div className='icons flex'>
 					<Link
-						to='https://www.instagram.com/the_bhcg/'
+						to='https://www.instagram.com/bhcg.bitshyd/'
 						rel='noopener'
 						target='_blank'
 					>
