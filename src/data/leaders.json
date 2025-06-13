@@ -3,45 +3,36 @@
 		"id": 1,
 		"align": "left",
 		"role": "President",
-		"name": "Anish Pathak",
+		"name": "Rithvik Vallivedu",
 		"profileKey": "por_1",
-		"information": "Anish Pathak is in his 3rd year pursuing a B.E. in Electrical and Electronics Engineering. As the President of BHCG, he provides strategic direction and ensures the club's growth. Anish has been instrumental in driving success across multiple live projects, spearheading key events, and leading initiatives to enhance engagement. He cultivates a collaborative culture,  inspires innovation, and sets the vision for the club's future through his leadership. Outside of his professional and academic pursuits, Anish is a passionate photographer and sports enthusiast, bringing creativity and energy to all he does.",
-		"link": "https://www.linkedin.com/in/anish-pathak-71961026b/"
+		"information": "I'm a dual major in Economics and Computer Science with a strong interest in business development. BHCG was the first club I joined, and it soon became the most meaningful part of my campus life. I believe in leading with clarity, working towards shared goals, and making decisions that are practical and people-focused. As President, I aim to build a platform that drives real impact-helping members grow through practical experience and industry collaborations, while shaping a strong consulting and product culture on campus and beyond.",
+		"link": "https://www.linkedin.com/in/rithvik-vallivedu/"
 	},
 	{
 		"id": 2,
 		"align": "right",
-		"role": "VICE PRESIDENT - CONSULTING",
-		"name": "ARYAN RAE",
+		"role": "VP, Consulting",
+		"name": "Sanjay Narayanan",
 		"profileKey": "por_2",
-		"information": "Aryan Rae is a 3rd year student working towards a B.E. in Mechanical Engineering. He has been an integral part of the Consulting Division, playing a key role in organizing various events and in-house sessions. Aryan has demonstrated a strong interest in operations management and finance, significantly contributing to the team's success. He showcased his leadership skills by leading a major consulting event during ATMOS.",
-		"link": "https://www.linkedin.com/in/aryanrae/"
+		"information": "I am a student of Mechanical Engineering at BITS Pilani, Hyderabad Campus, with a passion for consulting, finance and business development. BHCG has been an integral part of my college journey. Stepping into the role as VP Consulting gives me the opportunity to lead high-impact client projects, drive strategic initiatives like case competitions and the casebook, and contribute to taking the club to new heights.",
+		"link": "https://www.linkedin.com/in/sanjay-narayanan-069129288/"
 	},
 	{
 		"id": 3,
 		"align": "left",
-		"role": "VICE PRESIDENT - PRODUCT",
-		"name": "VAIBHAV AGARWAL",
+		"role": "VP, Product & Analytics",
+		"name": "Sanskar Paradeshi",
 		"profileKey": "por_3",
-		"information": "Vaibhav Agarwal is in his 3rd year, pursuing a B.E. in Electronics and Instrumentation Engineering. Vaibhav has actively contributed to the club by participating in fests and other activities. He took the initiative in the product cohort \"Prod-eezy,\" playing a major role in its success by bringing in mentors and managing each session. He has a keen interest in product management and has completed internships in this domain.",
-		"link": "https://www.linkedin.com/in/vaibhav-agarwal-52a45324b/"
+		"information": "I’m an Eco + ECE dualite with a passion for Finance and Machine Learning. As the Vice President of Product Management and Data Analytics, I’m excited to help the club use data in smarter ways, improve how we work as a team, and support our members in solving real-world problems with real impact.",
+		"link": "https://www.linkedin.com/in/sanskar-paradeshi-b02629291/"
 	},
 	{
 		"id": 4,
 		"align": "right",
-		"role": "D. O. P - CONSULTING",
-		"name": "RITWIK PANDEY",
+		"role": "Tech & Design Lead",
+		"name": "Aravind Sathesh",
 		"profileKey": "por_4",
-		"information": "Ritwik Pandey is a 3rd year student pursuing a B.E. in Electrical and Electronics Engineering. He has been actively involved in club activities since his first year, contributing to various fronts such as annual competitions, the product management cohort, and pitching for potential live projects. Ritwik has a strong interest in product management and consulting, continually expanding his knowledge in these areas.",
-		"link": "https://www.linkedin.com/in/ritwik-pandey-215a1b26a/"
-	},
-	{
-		"id": 5,
-		"align": "left",
-		"role": "D. O. P - PRODUCT",
-		"name": "ANGAD SINGH",
-		"profileKey": "por_5",
-		"information": "Angad is an ambitious student entering his third year, pursuing a dual degree in M.Sc. Chemistry and Mechanical Engineering. With a solid background in product management, Angad has significantly contributed to BHCG by participating in competitions, contributing to the creation of the club's casebook, and leading the organization of a product management cohort. His expertise and proactive involvement have made him a valuable asset to the club and his peers.",
-		"link": "https://www.linkedin.com/in/angad-singh-167915269/"
+		"information": "As an ENI student with a strong interest in tech and design, I handle everything from designing and maintaining our website to supporting the team on technical projects. I bring a strong design sense and solid development experience, helping shape both our digital presence and the tools we build. Whether it’s refining interfaces or solving technical challenges, I ensure our work is clean, consistent, and effective.",
+		"link": "https://www.linkedin.com/in/aravind-sathesh/"
 	}
 ]
