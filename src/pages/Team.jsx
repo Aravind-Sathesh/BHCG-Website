@@ -15,7 +15,6 @@ import por_1 from '../assets/team/por_1.webp';
 import por_2 from '../assets/team/por_2.webp';
 import por_3 from '../assets/team/por_3.webp';
 import por_4 from '../assets/team/por_4.webp';
-import por_5 from '../assets/team/por_5.webp';
 
 // Create a mapping from profileKey in JSON to the imported image variables
 const profileImages = {
@@ -23,7 +22,6 @@ const profileImages = {
 	por_2: por_2,
 	por_3: por_3,
 	por_4: por_4,
-	por_5: por_5,
 };
 
 const Team = () => {
